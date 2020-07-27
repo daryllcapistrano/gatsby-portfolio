@@ -1,6 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import HeadShotImage from "../images/HeadShotImage"
+import AppBar from "@material-ui/core/AppBar"
+import Toolbar from "@material-ui/core/Toolbar"
+import Container from "@material-ui/core/Container"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -14,17 +16,11 @@ const Header = () => {
   `)
 
   return (
-    <header>
-      <div>{data.site.siteMetadata.title}</div>
-      <div>
-        <HeadShotImage />
-      </div>
-      <div>
-        <button>asdf</button>
-        <button>asdf</button>
-        <button>adsf</button>
-      </div>
-    </header>
+    <AppBar position="static" color="transparent">
+      <Toolbar>
+        <Container>{data.site.siteMetadata.title}</Container>
+      </Toolbar>
+    </AppBar>
   )
 }
 

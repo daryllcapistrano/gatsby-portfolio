@@ -26,7 +26,12 @@ const HeadShotImage = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <Img
+      fluid={data.placeholderImage.childImageSharp.fluid}
+      alt="bloody headshot"
+    />
+  )
 }
 
 export default HeadShotImage

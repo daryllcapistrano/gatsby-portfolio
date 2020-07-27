@@ -1,18 +1,19 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-
+import { createGlobalStyle } from "styled-components"
 import Header from "../header/Header"
-import "./layout.css"
+import "./normalize.css"
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: #0e1111;
+    color: #e5e5e5
+  }
+`
 
 const Layout = ({ children }) => {
   return (
     <>
+      <GlobalStyle />
       <Header />
       <main>{children}</main>
     </>
