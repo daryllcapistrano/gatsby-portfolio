@@ -5,7 +5,7 @@ import DesktopHeroImage from "../images/DesktopHeroImage"
 const HeroText = styled.h3`
   position: absolute;
   z-index: 100;
-  top: 15%;
+  top: 25%;
   left: 15%;
 `
 

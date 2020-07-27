@@ -4,9 +4,11 @@ import Header from "../header/Header"
 import "./normalize.css"
 
 const GlobalStyle = createGlobalStyle`
-  body {
+  html, body {
     background-color: #0e1111;
-    color: #e5e5e5
+    color: #e5e5e5;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 `
 
