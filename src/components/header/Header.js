@@ -8,6 +8,8 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import Slide from "@material-ui/core/Slide"
 import Button from "@material-ui/core/Button"
 
+import { IoIosApps, IoIosFingerPrint, IoIosContact } from "react-icons/io"
+
 const NavContainer = styled.ul`
   display: inline-flex;
   list-style-type: none;
@@ -43,18 +45,33 @@ export default function Header(props) {
           <Container>{data.site.siteMetadata.title}</Container>
           <NavContainer>
             <li>
-              <Button color="inherit" variant="text" size="medium">
+              <Button
+                color="inherit"
+                variant="text"
+                size="medium"
+                startIcon={<IoIosApps />}
+              >
                 projects
               </Button>
             </li>
             <li>
-              <Button color="inherit" variant="text" size="medium">
+              <Button
+                color="inherit"
+                variant="text"
+                size="medium"
+                startIcon={<IoIosFingerPrint />}
+              >
                 about
               </Button>
             </li>
             <li>
-              <Button color="inherit" variant="text" size="medium">
-                contacts
+              <Button
+                color="inherit"
+                variant="text"
+                size="medium"
+                startIcon={<IoIosContact />}
+              >
+                contact
               </Button>
             </li>
           </NavContainer>
