@@ -1,6 +1,7 @@
 import React from "react"
 import { createGlobalStyle } from "styled-components"
 import Header from "../header/Header"
+import Footer from "../footer/Footer"
 import "./normalize.css"
 
 const GlobalStyle = createGlobalStyle`
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Header />
       <main>{children}</main>
+      <Footer />
     </>
   )
 }
