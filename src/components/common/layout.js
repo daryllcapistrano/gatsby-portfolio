@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     color: #e5e5e5;
     max-width: 100%;
     overflow-x: hidden;
+    margin: 0 .5em
   }
 `
 

@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid"
 
 const AboutMe = () => {
   return (
-    <section>
+    <section id="about">
       <h3>About Me</h3>
       <Grid container>
         <Grid item xs={12} sm={6}>
