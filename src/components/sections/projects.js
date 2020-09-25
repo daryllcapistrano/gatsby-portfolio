@@ -6,14 +6,14 @@ const Projects = () => {
   return (
     <section id="projects">
       <h3>Projects</h3>
-      <Grid container spacing={1}>
-        <Grid item xs={12} sm={4} align="center">
+      <Grid container>
+        <Grid item xs={12}>
           <ProjectCard />
         </Grid>
-        <Grid item xs={12} sm={4} align="center">
+        <Grid item xs={12}>
           <ProjectCard />
         </Grid>
-        <Grid item xs={12} sm={4} align="center">
+        <Grid item xs={12}>
           <ProjectCard />
         </Grid>
       </Grid>
