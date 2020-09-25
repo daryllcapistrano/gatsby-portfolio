@@ -4,17 +4,37 @@ import Grid from "@material-ui/core/Grid"
 
 const AboutMe = () => {
   return (
-    <section id="about">
-      <h3>About Me</h3>
+    <section id="about" style={{ height: `100vh` }}>
+      <div
+        style={{
+          borderBottom: ` 1px solid`,
+          marginBottom: `2em`,
+        }}
+      >
+        <h3>[ 2 ] About</h3>
+      </div>
       <Grid container>
         <Grid item xs={12} sm={6}>
-          <HeadShotImage />
+          <div style={{ margin: `1em` }}>
+            <HeadShotImage />
+          </div>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
-            vero nemo obcaecati laborum itaque, ut tempore, sed, at quia dolore
-            numquam nam exercitationem!
+          <div style={{ margin: `1em` }}>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate quam accusantium voluptatem ducimus, nemo ipsum dolor
+              error expedita, rem molestiae quae beatae dolorum harum inventore
+              et aliquid voluptatibus repellat nesciunt provident maxime
+              excepturi, natus consequuntur. Accusantium laboriosam enim officia
+              quo, optio ad sapiente perspiciatis tempora eligendi! Ipsam,
+              maxime. Eveniet iste fuga eligendi sapiente magni voluptatem ipsum
+              necessitatibus blanditiis ipsa, provident doloremque eum quos
+              minus at saepe officia nam, tempore voluptates! Impedit sapiente
+              velit id voluptas debitis eos. Tempore autem praesentium veritatis
+              consectetur quia velit non aut possimus enim saepe, delectus quam
+              facere magni aspernatur in vel tempora nisi mollitia quo!
+            </p>
           </div>
         </Grid>
       </Grid>

@@ -10,8 +10,8 @@ const BottomNav = styled.footer`
   justify-content: space-between;
   margin: 2em 0 0 0;
   padding: 0.25em;
-  background-color: black;
-  color: white;
+  background-color: #091540;
+  color: #ddf8e8;
 `
 
 export default function Footer() {

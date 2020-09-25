@@ -1,22 +1,18 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
-import Container from "@material-ui/core/Container"
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import Slide from "@material-ui/core/Slide"
 import Button from "@material-ui/core/Button"
 
-import { IoIosApps, IoIosFingerPrint, IoIosContact } from "react-icons/io"
-
 const StyledToolbar = styled(Toolbar)`
-  ${"" /* display: inline-flex; */}
+  font-family: inherit;
   padding: 0.25em;
   width: 100%;
-  ${"" /* justify-content: space-between; */}
-  background-color: black;
-  color: white;
+  background-color: #091540;
+  color: #ddf8e8;
 `
 
 const LinkContainer = styled.div`
@@ -36,15 +32,15 @@ function HideOnScroll(props) {
 }
 
 export default function Header(props) {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <HideOnScroll {...props}>

@@ -51,6 +51,7 @@ const ProjectCardContent = styled.div`
   background: white;
   padding: 4em 3em 2.25em 3em;
   position: relative;
+  border-radius: 0 0 5px 5px;
   &:before {
     position: absolute;
     content: "";
@@ -112,6 +113,7 @@ const ProjectCardImageContainer = styled.div`
   position: relative;
   padding-left: 2em;
   padding-right: 2em;
+  border-radius: 5px 5px 0 0;
   @media (max-width: 760px) {
     padding-top: 3em;
     max-height: 200px;
@@ -146,7 +148,10 @@ const ProjectCard = () => (
     <ProjectCardContent className="ProjectCardContent">
       <ProjectCardCategory>category</ProjectCardCategory>
       <ProjectCardTitle>title</ProjectCardTitle>
-      <ProjectCardBlurb>rich text</ProjectCardBlurb>
+      <ProjectCardBlurb>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maxime
+        quibusdam dicta, et dolorum facere quisquam!
+      </ProjectCardBlurb>
       <ProjectCardAction className="ProjectCardAction">
         Details <span>&#8594;</span>
       </ProjectCardAction>

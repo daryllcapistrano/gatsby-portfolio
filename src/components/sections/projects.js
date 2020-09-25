@@ -5,7 +5,16 @@ import ProjectCard from "../projects/ProjectCard"
 const Projects = () => {
   return (
     <section id="projects">
-      <h3>Projects</h3>
+      <div
+        style={{
+          borderBottom: ` 1px solid`,
+          marginBottom: `2em`,
+        }}
+      >
+        <h3>
+          <span style={{ fontWeight: `300` }}>[ 1 ]</span> Projects
+        </h3>
+      </div>
       <Grid container>
         <Grid item xs={12}>
           <ProjectCard />
