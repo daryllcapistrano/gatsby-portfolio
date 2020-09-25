@@ -10,11 +10,18 @@ import Button from "@material-ui/core/Button"
 
 import { IoIosApps, IoIosFingerPrint, IoIosContact } from "react-icons/io"
 
-const LinkContainer = styled.div`
-  display: inline-flex;
-  padding: 0;
+const StyledToolbar = styled(Toolbar)`
+  ${"" /* display: inline-flex; */}
+  padding: 0.25em;
   width: 100%;
-  justify-content: center;
+  ${"" /* justify-content: space-between; */}
+  background-color: black;
+  color: white;
+`
+
+const LinkContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
 `
 
 function HideOnScroll(props) {
@@ -42,42 +49,42 @@ export default function Header(props) {
   return (
     <HideOnScroll {...props}>
       <AppBar position="fixed" color="transparent" elevation={0}>
-        <Toolbar disableGutters>
-          <Container>
+        <StyledToolbar disableGutters>
+          {/* <Container>
             <h1>{data.site.siteMetadata.title}</h1>
-            <LinkContainer>
-              <Button
-                color="inherit"
-                variant="text"
-                size="medium"
-                href="#projects"
-                startIcon={<IoIosApps />}
-              >
-                projects
-              </Button>
+          </Container> */}
+          <LinkContainer>
+            <Button
+              color="inherit"
+              variant="text"
+              size="medium"
+              href="#projects"
+              // startIcon={<IoIosApps />}
+            >
+              projects
+            </Button>
 
-              <Button
-                color="inherit"
-                variant="text"
-                size="medium"
-                href="#about"
-                startIcon={<IoIosFingerPrint />}
-              >
-                about
-              </Button>
+            <Button
+              color="inherit"
+              variant="text"
+              size="medium"
+              href="#about"
+              // startIcon={<IoIosFingerPrint />}
+            >
+              about
+            </Button>
 
-              <Button
-                color="inherit"
-                variant="text"
-                size="medium"
-                href="#contact"
-                startIcon={<IoIosContact />}
-              >
-                contact
-              </Button>
-            </LinkContainer>
-          </Container>
-        </Toolbar>
+            <Button
+              color="inherit"
+              variant="text"
+              size="medium"
+              href="#contact"
+              // startIcon={<IoIosContact />}
+            >
+              contact me
+            </Button>
+          </LinkContainer>
+        </StyledToolbar>
       </AppBar>
     </HideOnScroll>
   )

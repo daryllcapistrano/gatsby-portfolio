@@ -8,12 +8,15 @@ import { GoMarkGithub } from "react-icons/go"
 const BottomNav = styled.footer`
   display: flex;
   justify-content: space-between;
-  margin: 2em 0 0.5em 0;
+  margin: 2em 0 0 0;
+  padding: 0.25em;
+  background-color: black;
+  color: white;
 `
 
 export default function Footer() {
   return (
-    <BottomNav>
+    <BottomNav id="contact">
       <Button
         color="inherit"
         variant="text"

@@ -6,11 +6,13 @@ import "./normalize.css"
 
 const GlobalStyle = createGlobalStyle`
   html, body {
-    background-color: #0e1111;
-    color: #e5e5e5;
+    background-color: #ffffff;
+    color: #000000;
     max-width: 100%;
     overflow-x: hidden;
-    margin: 0 .5em
+    margin: 0;
+    scroll-behavior: smooth;
+
   }
 `
 
