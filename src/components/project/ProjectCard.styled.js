@@ -1,4 +1,3 @@
-import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 // import { RichText } from "prismic-reactjs";
@@ -7,7 +6,7 @@ import styled from "styled-components"
 // import colors from "styles/colors";
 // import PropTypes from "prop-types";
 
-const ProjectCardContainer = styled(Link)`
+export const ProjectCardContainer = styled(Link)`
   display: grid;
   grid-template-columns: 4fr 7fr;
   box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.06);
@@ -46,8 +45,7 @@ const ProjectCardContainer = styled(Link)`
     }
   }
 `
-
-const ProjectCardContent = styled.div`
+export const ProjectCardContent = styled.div`
   background: #081236;
   padding: 4em 3em 2.25em 3em;
   position: relative;
@@ -71,18 +69,15 @@ const ProjectCardContent = styled.div`
     grid-row: 2;
   }
 `
-
-const ProjectCardCategory = styled.h6`
+export const ProjectCardCategory = styled.h6`
   font-weight: 600;
   color: #ddf8e8;
 `
-
-const ProjectCardTitle = styled.h3`
+export const ProjectCardTitle = styled.h3`
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 `
-
-const ProjectCardBlurb = styled.div`
+export const ProjectCardBlurb = styled.div`
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   margin-bottom: 5em;
@@ -90,8 +85,7 @@ const ProjectCardBlurb = styled.div`
     margin-bottom: 2.5em;
   }
 `
-
-const ProjectCardAction = styled.div`
+export const ProjectCardAction = styled.div`
   font-weight: 600;
   text-decoration: none;
   color: #ddf8e8;
@@ -103,10 +97,8 @@ const ProjectCardAction = styled.div`
     transition: transform 400ms ease-in-out;
   }
 `
-
-const ProjectCardImageContainer = styled.div`
+export const ProjectCardImageContainer = styled.div`
   background: #ddf8e8;
-  color: black;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -116,8 +108,8 @@ const ProjectCardImageContainer = styled.div`
   padding-right: 2em;
   border-radius: 5px 5px 0 0;
   @media (max-width: 760px) {
-    padding-top: 3em;
-    max-height: 200px;
+    padding: 2em;
+    max-height: 300px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -135,40 +127,13 @@ const ProjectCardImageContainer = styled.div`
     transition: all 150ms ease-in-out;
   }
   img {
-    max-width: 400px;
     width: 100%;
+    height: auto;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
     @media (max-width: 760px) {
       max-width: 300px;
+      width: 100%;
+      height: auto:
     }
   }
 `
-
-const ProjectCard = () => (
-  <ProjectCardContainer to={`#projects`}>
-    <ProjectCardContent className="ProjectCardContent">
-      <ProjectCardCategory>category</ProjectCardCategory>
-      <ProjectCardTitle>title</ProjectCardTitle>
-      <ProjectCardBlurb>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maxime
-        quibusdam dicta, et dolorum facere quisquam!
-      </ProjectCardBlurb>
-      <ProjectCardAction className="ProjectCardAction">
-        Details <span>&#8594;</span>
-      </ProjectCardAction>
-    </ProjectCardContent>
-    <ProjectCardImageContainer className="ProjectCardImageContainer">
-      image here
-    </ProjectCardImageContainer>
-  </ProjectCardContainer>
-)
-
-export default ProjectCard
-
-// ProjectCard.propTypes = {
-//     category: PropTypes.array.isRequired,
-//     thumbnail: PropTypes.object.isRequired,
-//     title: PropTypes.array.isRequired,
-//     description: PropTypes.array.isRequired,
-//     uid: PropTypes.string.isRequired
-// }

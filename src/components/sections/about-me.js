@@ -6,7 +6,7 @@ import {
   SectionHeader,
   SectionNumber,
   SectionTitle,
-} from "./styles/SectionHeader"
+} from "./Section.styled"
 
 const AboutMe = () => {
   return (

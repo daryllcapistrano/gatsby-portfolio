@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react"
-import { useOnClickOutside } from "../common/hooks"
+import { useOnClickOutside } from "../../hooks/useOnclickOutside"
 import FocusLock from "react-focus-lock"
 import Burger from "../burgermenu/burger"
 import Menu from "../burgermenu/menu"

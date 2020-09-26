@@ -1,12 +1,12 @@
 import React from "react"
 import Grid from "@material-ui/core/Grid"
-import ProjectCard from "../projects/ProjectCard"
+import ProjectCard from "../project/ProjectCard"
 import {
   SectionWrapper,
   SectionHeader,
   SectionNumber,
   SectionTitle,
-} from "./styles/SectionHeader"
+} from "./Section.styled"
 
 const Projects = () => {
   return (

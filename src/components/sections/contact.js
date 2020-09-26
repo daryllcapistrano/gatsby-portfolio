@@ -5,7 +5,7 @@ import {
   SectionHeader,
   SectionNumber,
   SectionTitle,
-} from "./styles/SectionHeader"
+} from "./Section.styled"
 
 const Contact = () => {
   return (
