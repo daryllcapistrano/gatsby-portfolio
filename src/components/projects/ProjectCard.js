@@ -14,7 +14,7 @@ const ProjectCardContainer = styled(Link)`
   margin: 1em 2em;
   transition: all 150ms ease-in-out;
   text-decoration: none;
-  color: black;
+  color: #ddf8e8;
   @media (max-width: 950px) {
     grid-template-columns: 4.5fr 7fr;
   }
@@ -22,13 +22,13 @@ const ProjectCardContainer = styled(Link)`
     grid-template-columns: 1fr;
   }
   @media (max-width: 600px) {
-    margin: 0.5em 1em;
+    margin: 1em 0;
   }
   &:hover {
     box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.1);
     transition: all 150ms ease-in-out;
     .ProjectCardAction {
-      color: black;
+      color: #4e6ee4;
       transition: all 150ms ease-in-out;
       span {
         transform: translateX(0px);
@@ -48,7 +48,7 @@ const ProjectCardContainer = styled(Link)`
 `
 
 const ProjectCardContent = styled.div`
-  background: white;
+  background: #081236;
   padding: 4em 3em 2.25em 3em;
   position: relative;
   border-radius: 0 0 5px 5px;
@@ -59,7 +59,7 @@ const ProjectCardContent = styled.div`
     height: 100%;
     left: 0;
     top: 0;
-    background: black;
+    background: #081236;
     mix-blend-mode: multiply;
     opacity: 0;
     transition: all 150ms ease-in-out;
@@ -74,7 +74,7 @@ const ProjectCardContent = styled.div`
 
 const ProjectCardCategory = styled.h6`
   font-weight: 600;
-  color: grey;
+  color: #ddf8e8;
 `
 
 const ProjectCardTitle = styled.h3`
@@ -94,7 +94,7 @@ const ProjectCardBlurb = styled.div`
 const ProjectCardAction = styled.div`
   font-weight: 600;
   text-decoration: none;
-  color: black;
+  color: #ddf8e8;
   transition: all 150ms ease-in-out;
   span {
     margin-left: 1em;
@@ -105,7 +105,8 @@ const ProjectCardAction = styled.div`
 `
 
 const ProjectCardImageContainer = styled.div`
-  background: lightgrey;
+  background: #ddf8e8;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: flex-end;

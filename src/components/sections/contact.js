@@ -1,14 +1,15 @@
 import React from "react"
 import Grid from "@material-ui/core/Grid"
 import {
+  SectionWrapper,
   SectionHeader,
   SectionNumber,
   SectionTitle,
-} from "../common/SectionHeader"
+} from "./styles/SectionHeader"
 
 const Contact = () => {
   return (
-    <section id="contact" style={{ height: `100vh` }}>
+    <SectionWrapper id="contact">
       <SectionHeader>
         <SectionNumber>03.</SectionNumber>
         <SectionTitle>Get In Touch With Me</SectionTitle>
@@ -34,7 +35,7 @@ const Contact = () => {
           </div>
         </Grid>
       </Grid>
-    </section>
+    </SectionWrapper>
   )
 }
 

@@ -2,14 +2,15 @@ import React from "react"
 import HeadShotImage from "../images/HeadShotImage"
 import Grid from "@material-ui/core/Grid"
 import {
+  SectionWrapper,
   SectionHeader,
   SectionNumber,
   SectionTitle,
-} from "../common/SectionHeader"
+} from "./styles/SectionHeader"
 
 const AboutMe = () => {
   return (
-    <section id="about" style={{ height: `100vh` }}>
+    <SectionWrapper id="about">
       <SectionHeader>
         <SectionNumber>02.</SectionNumber>
         <SectionTitle>Some Background</SectionTitle>
@@ -39,7 +40,7 @@ const AboutMe = () => {
           </div>
         </Grid>
       </Grid>
-    </section>
+    </SectionWrapper>
   )
 }
 

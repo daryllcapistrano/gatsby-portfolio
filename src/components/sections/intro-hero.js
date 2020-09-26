@@ -12,18 +12,15 @@ const IntroHero = () => {
   return (
     <section style={{ height: `100vh` }}>
       <TextContainer>
-        <p>Hi, my name is</p>
-        <strong> Daryll Capistrano.</strong>
-        <h5>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora vel
-          atque ex quam assumenda reiciendis.
-        </h5>
+        <p style={{ letterSpacing: `2px` }}>Hi, my name is</p>
+        <strong style={{ fontSize: `2em` }}> Daryll Capistrano.</strong>
+        <h5>I'm a full stack developer</h5>
         <small>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
           cumque sint, magni amet minus voluptatibus excepturi repellendus
           aliquid! Iste culpa sapiente odio soluta odit tempore.
         </small>
-        <div>
+        <div style={{ margin: `2.5em 0` }}>
           <button>contact me</button>
         </div>
       </TextContainer>

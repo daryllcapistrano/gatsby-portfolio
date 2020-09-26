@@ -2,14 +2,15 @@ import React from "react"
 import Grid from "@material-ui/core/Grid"
 import ProjectCard from "../projects/ProjectCard"
 import {
+  SectionWrapper,
   SectionHeader,
   SectionNumber,
   SectionTitle,
-} from "../common/SectionHeader"
+} from "./styles/SectionHeader"
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <SectionWrapper id="projects">
       <SectionHeader>
         <SectionNumber>01.</SectionNumber>
         <SectionTitle>Things I've Built</SectionTitle>
@@ -25,7 +26,7 @@ const Projects = () => {
           <ProjectCard />
         </Grid>
       </Grid>
-    </section>
+    </SectionWrapper>
   )
 }
 

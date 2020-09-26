@@ -9,10 +9,9 @@ import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import Slide from "@material-ui/core/Slide"
-// import Button from "@material-ui/core/Button"
 
 const StyledToolbar = styled(Toolbar)`
-  padding: 0.25em;
+  padding: 0.5em;
   width: 100%;
   justify-content: space-around;
   background-color: #091540;
@@ -22,17 +21,12 @@ const StyledToolbar = styled(Toolbar)`
   box-shadow: 0px 2px 40px 0px rgba(5, 12, 36, 1);
 `
 
-// const LinkContainer = styled.div`
-//   display: flex;
-//   ${"" /* justify-content: flex-end; */}
-// `
-
 function HideOnScroll(props) {
   const { children } = props
   const trigger = useScrollTrigger()
 
   return (
-    <Slide appear={false} direction="down" in={!trigger} timeout={400}>
+    <Slide appear={false} direction="down" in={!trigger} timeout={450}>
       {children}
     </Slide>
   )
@@ -58,46 +52,26 @@ export default function Header(props) {
   return (
     <HideOnScroll {...props}>
       <AppBar position="fixed" color="transparent" elevation={0}>
-        <StyledToolbar disableGutters>
+        <StyledToolbar>
           <div ref={node}>
             <FocusLock disabled={!open}>
               <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
               <Menu open={open} setOpen={setOpen} id={menuId} />
             </FocusLock>
           </div>
-          <span>Logo</span>
-
-          {/* <LinkContainer>
-            <Button
-              color="inherit"
-              variant="text"
-              size="medium"
-              href="#projects"
-              // startIcon={<IoIosApps />}
-            >
-              projects
-            </Button>
-
-            <Button
-              color="inherit"
-              variant="text"
-              size="medium"
-              href="#about"
-              // startIcon={<IoIosFingerPrint />}
-            >
-              about
-            </Button>
-
-            <Button
-              color="inherit"
-              variant="text"
-              size="medium"
-              href="#contact"
-              // startIcon={<IoIosContact />}
-            >
-              contact me
-            </Button>
-          </LinkContainer> */}
+          <span
+            style={{
+              width: `50%`,
+              textAlign: `end`,
+            }}
+          >
+            <h2>
+              <span role="img" aria-label="h2">
+                {" "}
+                😤 😤 😤{" "}
+              </span>
+            </h2>
+          </span>
         </StyledToolbar>
       </AppBar>
     </HideOnScroll>
