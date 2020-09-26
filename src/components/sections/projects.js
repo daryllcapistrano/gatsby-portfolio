@@ -1,20 +1,19 @@
 import React from "react"
 import Grid from "@material-ui/core/Grid"
 import ProjectCard from "../projects/ProjectCard"
+import {
+  SectionHeader,
+  SectionNumber,
+  SectionTitle,
+} from "../common/SectionHeader"
 
 const Projects = () => {
   return (
     <section id="projects">
-      <div
-        style={{
-          borderBottom: ` 1px solid`,
-          marginBottom: `2em`,
-        }}
-      >
-        <h3>
-          <span style={{ fontWeight: `300` }}>[ 1 ]</span> Projects
-        </h3>
-      </div>
+      <SectionHeader>
+        <SectionNumber>01.</SectionNumber>
+        <SectionTitle>Things I've Built</SectionTitle>
+      </SectionHeader>
       <Grid container>
         <Grid item xs={12}>
           <ProjectCard />

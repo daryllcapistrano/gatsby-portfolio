@@ -1,18 +1,19 @@
 import React from "react"
 import HeadShotImage from "../images/HeadShotImage"
 import Grid from "@material-ui/core/Grid"
+import {
+  SectionHeader,
+  SectionNumber,
+  SectionTitle,
+} from "../common/SectionHeader"
 
 const AboutMe = () => {
   return (
     <section id="about" style={{ height: `100vh` }}>
-      <div
-        style={{
-          borderBottom: ` 1px solid`,
-          marginBottom: `2em`,
-        }}
-      >
-        <h3>[ 2 ] About</h3>
-      </div>
+      <SectionHeader>
+        <SectionNumber>02.</SectionNumber>
+        <SectionTitle>Some Background</SectionTitle>
+      </SectionHeader>
       <Grid container>
         <Grid item xs={12} sm={6}>
           <div style={{ margin: `1em` }}>
