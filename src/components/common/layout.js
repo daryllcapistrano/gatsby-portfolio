@@ -1,6 +1,7 @@
 import React from "react"
+import { createGlobalStyle, ThemeProvider } from "styled-components"
+import { theme } from "./theme"
 import { Helmet } from "react-helmet"
-import { createGlobalStyle } from "styled-components"
 import Header from "../header/Header"
 import Footer from "../footer/Footer"
 import "./normalize.css"
@@ -20,18 +21,20 @@ const GlobalStyle = createGlobalStyle`
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <Helmet>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        ></link>
-      </Helmet>
-      <GlobalStyle />
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </>
+    <ThemeProvider theme={theme}>
+      <>
+        <Helmet>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+          ></link>
+        </Helmet>
+        <GlobalStyle />
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </>
+    </ThemeProvider>
   )
 }
 
