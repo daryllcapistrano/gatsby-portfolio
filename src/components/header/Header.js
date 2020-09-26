@@ -4,22 +4,10 @@ import FocusLock from "react-focus-lock"
 import Burger from "../burgermenu/Burger"
 import Menu from "../burgermenu/Menu"
 // import { useStaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
 import AppBar from "@material-ui/core/AppBar"
-import Toolbar from "@material-ui/core/Toolbar"
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import Slide from "@material-ui/core/Slide"
-
-const StyledToolbar = styled(Toolbar)`
-  padding: 0.5em;
-  width: 100%;
-  justify-content: space-around;
-  background-color: #091540;
-  color: #ddf8e8;
-  -webkit-box-shadow: 0px 2px 40px 0px rgba(5, 12, 36, 1);
-  -moz-box-shadow: 0px 2px 40px 0px rgba(5, 12, 36, 1);
-  box-shadow: 0px 2px 40px 0px rgba(5, 12, 36, 1);
-`
+import { StyledToolbar } from "./Header.styled"
 
 function HideOnScroll(props) {
   const { children } = props

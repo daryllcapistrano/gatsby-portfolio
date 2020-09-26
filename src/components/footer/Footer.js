@@ -1,22 +1,13 @@
 import React from "react"
-import styled from "styled-components"
 import { Button } from "@material-ui/core"
 import { MdEmail } from "react-icons/md"
 import { GrInstagram } from "react-icons/gr"
 import { GoMarkGithub } from "react-icons/go"
-
-const BottomNav = styled.footer`
-  display: flex;
-  justify-content: center;
-  margin: 2em 0;
-  padding: 0.25em;
-  background-color: #091540;
-  color: #ddf8e8;
-`
+import { StyledFooter } from "./Footer.styled"
 
 export default function Footer() {
   return (
-    <BottomNav>
+    <StyledFooter>
       <div>
         <Button
           color="inherit"
@@ -46,6 +37,6 @@ export default function Footer() {
           endIcon={<GoMarkGithub />}
         ></Button>
       </div>
-    </BottomNav>
+    </StyledFooter>
   )
 }
