@@ -16,7 +16,7 @@ const Contact = () => {
       </SectionHeader>
       <Grid container>
         <Grid item xs={12} sm={6}>
-          <div>
+          <div style={{ margin: `1em` }}>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugit
               dolorem pariatur iusto, animi saepe, itaque sequi rem nisi
@@ -25,7 +25,7 @@ const Contact = () => {
           </div>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <div>
+          <div style={{ margin: `1em` }}>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
               perspiciatis repellendus quia id laboriosam earum nesciunt
