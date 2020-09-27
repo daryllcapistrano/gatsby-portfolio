@@ -1,6 +1,9 @@
+import React from "react"
+import { FaBootstrap, FaReact } from "react-icons/fa"
+
 export const ProjectList = {
   first: {
-    stack: "stack icons",
+    stack: [<FaBootstrap />, <FaReact />, <FaReact />],
     title: "Skate Spot App",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus vero sunt ipsam minima cupiditate alias.",

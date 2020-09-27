@@ -69,15 +69,20 @@ export const Content = styled.div`
     grid-row: 2;
   }
 `
-export const Stack = styled.h6`
-  font-weight: 600;
+export const Stack = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 0;
+  width: 50%;
   color: #ddf8e8;
 `
-export const Title = styled.h3`
+export const Title = styled.h2`
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 `
 export const Description = styled.div`
+  font-size: 1em;
+  font-weight: 300;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   margin-bottom: 5em;

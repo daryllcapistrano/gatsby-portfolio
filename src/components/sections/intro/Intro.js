@@ -35,7 +35,7 @@ const Intro = () => {
             disableElevation={true}
             href="#contact"
           >
-            contact me
+            hire me !
           </Button>
         </ButtonContainer>
       </TextContainer>

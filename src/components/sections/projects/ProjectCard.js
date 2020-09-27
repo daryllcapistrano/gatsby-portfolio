@@ -13,9 +13,9 @@ import {
 const ProjectCard = props => (
   <Container to={props.detailLink}>
     <Content className="Content">
-      <Stack>{props.stack}</Stack>
       <Title>{props.title}</Title>
       <Description>{props.description}</Description>
+      <Stack>{props.stack}</Stack>
       <Action className="Action">
         Details <span>&#8594;</span>
       </Action>
