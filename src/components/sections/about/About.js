@@ -1,6 +1,7 @@
 import React from "react"
 import HeadShotImage from "../../images/HeadShotImage"
 import Grid from "@material-ui/core/Grid"
+import { ImageWrapper, TextWrapper } from "./About.styled"
 import {
   SectionWrapper,
   SectionHeader,
@@ -17,12 +18,12 @@ const AboutMe = () => {
       </SectionHeader>
       <Grid container>
         <Grid item xs={12} sm={6}>
-          <div style={{ margin: `1em` }}>
+          <ImageWrapper>
             <HeadShotImage />
-          </div>
+          </ImageWrapper>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <div style={{ margin: `1em` }}>
+          <TextWrapper>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Cupiditate quam accusantium voluptatem ducimus, nemo ipsum dolor
@@ -37,7 +38,7 @@ const AboutMe = () => {
               consectetur quia velit non aut possimus enim saepe, delectus quam
               facere magni aspernatur in vel tempora nisi mollitia quo!
             </p>
-          </div>
+          </TextWrapper>
         </Grid>
       </Grid>
     </SectionWrapper>

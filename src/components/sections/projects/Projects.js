@@ -1,7 +1,7 @@
 import React from "react"
 import Grid from "@material-ui/core/Grid"
 import ProjectCard from "./ProjectCard"
-import { ProjectList } from "./projects.data"
+import { ProjectList } from "./Projects.data"
 import {
   SectionWrapper,
   SectionHeader,

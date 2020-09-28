@@ -1,5 +1,6 @@
 import React from "react"
 import Grid from "@material-ui/core/Grid"
+import { TextWrapper } from "./Contact.styled"
 import {
   SectionWrapper,
   SectionHeader,
@@ -16,13 +17,13 @@ const Contact = () => {
       </SectionHeader>
       <Grid container>
         <Grid item xs={12} sm={6}>
-          <div style={{ margin: `1em` }}>
+          <TextWrapper>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugit
               dolorem pariatur iusto, animi saepe, itaque sequi rem nisi
               recusandae vel distinctio. Adipisci.
             </p>
-          </div>
+          </TextWrapper>
         </Grid>
         <Grid item xs={12} sm={6}>
           <div style={{ margin: `1em` }}>
