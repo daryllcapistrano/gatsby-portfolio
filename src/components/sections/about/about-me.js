@@ -1,12 +1,12 @@
 import React from "react"
-import HeadShotImage from "../images/HeadShotImage"
+import HeadShotImage from "../../images/HeadShotImage"
 import Grid from "@material-ui/core/Grid"
 import {
   SectionWrapper,
   SectionHeader,
   SectionNumber,
   SectionTitle,
-} from "./Section.styled"
+} from "../Section.styled"
 
 const AboutMe = () => {
   return (
