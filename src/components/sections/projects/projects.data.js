@@ -6,21 +6,22 @@ export const ProjectList = {
     stack: [<FaBootstrap />, <FaReact />, <FaReact />],
     title: "Skate Spot App",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus vero sunt ipsam minima cupiditate alias.",
-    detailLink: "/404",
+      "A convenient way to save skatespots on the go and serves as a directory that you can share with friends.",
+    detailLink: "https://github.com/daryllcapistrano/skatespot-client",
   },
   second: {
-    stack: "stack icons",
+    stack: [<FaBootstrap />, <FaReact />, <FaReact />],
     title: "Photography and Video Portfolio",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus vero sunt ipsam minima cupiditate alias.",
-    detailLink: "/404",
+      "Website created for a friend that showcases his work with photography and video.",
+    detailLink:
+      "https://github.com/daryllcapistrano/keaton-portfolio-gatsby-v2",
   },
   third: {
-    stack: "stack icons",
+    stack: [<FaBootstrap />, <FaReact />, <FaReact />],
     title: "Game of S.K.A.T.E.",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus vero sunt ipsam minima cupiditate alias.",
-    detailLink: "/404",
+      "A S.K.A.T.E. game score tracker using React hooks to extract stateful logic from components",
+    detailLink: "https://github.com/daryllcapistrano/Game-of-SKATE",
   },
 }

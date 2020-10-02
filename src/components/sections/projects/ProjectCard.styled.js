@@ -1,12 +1,6 @@
-import { Link } from "gatsby"
 import styled from "styled-components"
-// import { RichText } from "prismic-reactjs";
-// import styled from "@emotion/styled";
-// import dimensions from "styles/dimensions";
-// import colors from "styles/colors";
-// import PropTypes from "prop-types";
 
-export const Container = styled(Link)`
+export const Container = styled.div`
   display: grid;
   grid-template-columns: 4fr 7fr;
   box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.06);
@@ -26,15 +20,6 @@ export const Container = styled(Link)`
   &:hover {
     box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.2);
     transition: all 150ms ease-in-out;
-    .Action {
-      color: #4e6ee4;
-      transition: all 150ms ease-in-out;
-      span {
-        transform: translateX(0px);
-        opacity: 1;
-        transition: transform 150ms ease-in-out;
-      }
-    }
     .Content::before {
       opacity: 0.1;
       transition: all 150ms ease-in-out;
@@ -46,27 +31,28 @@ export const Container = styled(Link)`
   }
 `
 export const Content = styled.div`
-  background: #081236;
+  background: #5f7de7;
   padding: 4em 3em 2.25em 3em;
   position: relative;
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px 0 0 5px;
   &:before {
-    position: absolute;
+    ${"" /* position: absolute; */}
     content: "";
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    background: #081236;
+    background: #5f7de7;
     mix-blend-mode: multiply;
     opacity: 0;
     transition: all 150ms ease-in-out;
   }
   @media (max-width: 950px) {
-    padding: 2em 1.5em;
+    padding: 0.75em 1.5em;
   }
   @media (max-width: 768px) {
     grid-row: 2;
+    border-radius: 0 0 5px 5px;
   }
 `
 export const Stack = styled.div`
@@ -90,8 +76,9 @@ export const Description = styled.div`
     margin-bottom: 2.5em;
   }
 `
-export const Action = styled.div`
+export const Action = styled.a`
   font-weight: 400;
+  font-size: 0.7em;
   text-decoration: none;
   color: #ddf8e8;
   transition: all 150ms ease-in-out;
@@ -100,6 +87,15 @@ export const Action = styled.div`
     transform: translateX(-8px);
     display: inline-block;
     transition: transform 400ms ease-in-out;
+  }
+  &:hover {
+    color: #4e6ee4;
+    transition: all 150ms ease-in-out;
+    span {
+      transform: translateX(0px);
+      opacity: 1;
+      transition: transform 150ms ease-in-out;
+    }
   }
 `
 export const ImageContainer = styled.div`
@@ -111,13 +107,14 @@ export const ImageContainer = styled.div`
   position: relative;
   padding-left: 2em;
   padding-right: 2em;
-  border-radius: 5px 5px 0 0;
-  @media (max-width: 760px) {
+  border-radius: 0 5px 5px 0;
+  @media (max-width: 768px) {
     padding: 2em;
     max-height: 300px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    border-radius: 5px 5px 0 0;
   }
   &:before {
     position: absolute;

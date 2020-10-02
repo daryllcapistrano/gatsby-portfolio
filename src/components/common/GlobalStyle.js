@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
     color: #DDF8E8;
     max-width: 100%;
     overflow-x: hidden;
-    margin: 0 1em;
     scroll-behavior: smooth;
 
   }

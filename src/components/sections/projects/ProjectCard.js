@@ -11,13 +11,18 @@ import {
 } from "./ProjectCard.styled"
 
 const ProjectCard = props => (
-  <Container to={props.detailLink}>
+  <Container>
     <Content className="Content">
       <Title>{props.title}</Title>
       <Description>{props.description}</Description>
       <Stack>{props.stack}</Stack>
-      <Action className="Action">
-        Details <span>&#8594;</span>
+      <Action
+        className="Action"
+        href={props.detailLink}
+        rel="noreferer noopener"
+        target="_blank"
+      >
+        View On Github <span>&#8594;</span>
       </Action>
     </Content>
     <ImageContainer className="ImageContainer">

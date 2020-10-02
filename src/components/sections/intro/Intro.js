@@ -13,7 +13,7 @@ import {
 
 const Intro = () => {
   return (
-    <IntroWrapper>
+    <IntroWrapper id="intro">
       <TextContainer>
         <Salutation>Hi, my name is</Salutation>
         <Name> Daryll Capistrano.</Name>
@@ -23,11 +23,7 @@ const Intro = () => {
         > */}
         <Title>I'm a full stack developer</Title>
         {/* </motion.div> */}
-        <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-          cumque sint, magni amet minus voluptatibus excepturi repellendus
-          aliquid! Iste culpa sapiente odio soluta odit tempore.
-        </Description>
+        <Description></Description>
         <ButtonContainer>
           <Button
             variant="outlined"
