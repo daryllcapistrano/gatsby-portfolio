@@ -1,5 +1,7 @@
-import React from "react"
-// import { motion } from "framer-motion"
+import React, { useEffect, useRef } from "react"
+import { srConfig } from "../../../config"
+import sr from "../../../utils/sr"
+
 import Button from "@material-ui/core/Button"
 import {
   IntroWrapper,
@@ -12,17 +14,15 @@ import {
 } from "./Intro.styled"
 
 const Intro = () => {
+  const revealContainer = useRef(null)
+  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
+
   return (
-    <IntroWrapper id="intro">
+    <IntroWrapper id="intro" ref={revealContainer}>
       <TextContainer>
         <Salutation>Hi, my name is</Salutation>
         <Name> Daryll Capistrano.</Name>
-        {/* <motion.div
-          animate={{ scale: 1.1 }}
-          transition={{ scale: "spring", damping: 3 }}
-        > */}
         <Title>I'm a full stack developer</Title>
-        {/* </motion.div> */}
         <Description></Description>
         <ButtonContainer>
           <Button

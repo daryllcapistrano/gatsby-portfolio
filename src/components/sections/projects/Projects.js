@@ -1,4 +1,6 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
+import { srConfig } from "../../../config"
+import sr from "../../../utils/sr"
 import Grid from "@material-ui/core/Grid"
 import ProjectCard from "./ProjectCard"
 import { ProjectList } from "./Projects.data"
@@ -10,8 +12,11 @@ import {
 } from "../Section.styled"
 
 const Projects = () => {
+  const revealContainer = useRef(null)
+  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
+
   return (
-    <SectionWrapper id="projects">
+    <SectionWrapper id="projects" ref={revealContainer}>
       <SectionHeader>
         <SectionNumber>01.</SectionNumber>
         <SectionTitle>Things I've Built</SectionTitle>

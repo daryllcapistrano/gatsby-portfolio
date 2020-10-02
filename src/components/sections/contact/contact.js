@@ -1,4 +1,6 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
+import { srConfig } from "../../../config"
+import sr from "../../../utils/sr"
 import Grid from "@material-ui/core/Grid"
 import { TextWrapper } from "./Contact.styled"
 import {
@@ -9,8 +11,11 @@ import {
 } from "../Section.styled"
 
 const Contact = () => {
+  const revealContainer = useRef(null)
+  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
+
   return (
-    <SectionWrapper id="contact">
+    <SectionWrapper id="contact" ref={revealContainer}>
       <SectionHeader>
         <SectionNumber>03.</SectionNumber>
         <SectionTitle>Get In Touch With Me</SectionTitle>

@@ -1,4 +1,6 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
+import { srConfig } from "../../../config"
+import sr from "../../../utils/sr"
 import HeadShotImage from "../../images/HeadShotImage"
 import Grid from "@material-ui/core/Grid"
 import { ImageWrapper, TextWrapper } from "./About.styled"
@@ -10,8 +12,11 @@ import {
 } from "../Section.styled"
 
 const AboutMe = () => {
+  const revealContainer = useRef(null)
+  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
+
   return (
-    <SectionWrapper id="about">
+    <SectionWrapper id="about" ref={revealContainer}>
       <SectionHeader>
         <SectionNumber>02.</SectionNumber>
         <SectionTitle>Some Background</SectionTitle>
