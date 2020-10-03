@@ -16,7 +16,7 @@ const Projects = () => {
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
 
   return (
-    <SectionWrapper id="projects" ref={revealContainer}>
+    <SectionWrapper id="projects" className="load-hidden" ref={revealContainer}>
       <SectionHeader>
         <SectionNumber>01.</SectionNumber>
         <SectionTitle>Things I've Built</SectionTitle>

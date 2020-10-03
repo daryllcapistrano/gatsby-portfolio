@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react"
-import { srConfig } from "../../../config"
+import { srConfigIntro } from "../../../config"
 import sr from "../../../utils/sr"
 
 import Button from "@material-ui/core/Button"
@@ -15,10 +15,10 @@ import {
 
 const Intro = () => {
   const revealContainer = useRef(null)
-  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
+  useEffect(() => sr.reveal(revealContainer.current, srConfigIntro()), [])
 
   return (
-    <IntroWrapper id="intro" ref={revealContainer}>
+    <IntroWrapper id="intro" className="load-hidden" ref={revealContainer}>
       <TextContainer>
         <Salutation>Hi, my name is</Salutation>
         <Name> Daryll Capistrano.</Name>

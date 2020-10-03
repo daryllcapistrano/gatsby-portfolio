@@ -8,8 +8,12 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-
   }
+
+  ${"" /* prevents flicker from scroll reveal animation */}
+  html.sr .load-hidden {
+    visibility: hidden;
+}
 `
 export const theme = {
   primaryDark: "#0D0C1D",

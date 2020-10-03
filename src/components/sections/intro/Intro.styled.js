@@ -7,7 +7,7 @@ export const IntroWrapper = styled.section`
 
 export const TextContainer = styled.div`
   position: absolute;
-  top: 25vh;
+  top: 33vh;
   color: white;
   margin: 0 1em 0 0;
 `

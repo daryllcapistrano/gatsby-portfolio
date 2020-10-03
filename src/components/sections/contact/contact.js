@@ -15,7 +15,7 @@ const Contact = () => {
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
 
   return (
-    <SectionWrapper id="contact" ref={revealContainer}>
+    <SectionWrapper id="contact" className="load-hidden" ref={revealContainer}>
       <SectionHeader>
         <SectionNumber>03.</SectionNumber>
         <SectionTitle>Get In Touch With Me</SectionTitle>

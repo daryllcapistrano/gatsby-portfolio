@@ -1,18 +1,14 @@
 import React from "react"
 import SEO from "../components/common/seo"
 import Layout from "../components/common/layout"
-// section components
-import IntroHero from "../components/sections/intro/Intro"
-import Projects from "../components/sections/projects/Projects"
-import AboutMe from "../components/sections/about/About"
-import Contact from "../components/sections/contact/Contact"
+import { Intro, Projects, About, Contact } from "../components/sections"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Main" />
-    <IntroHero />
+    <Intro />
     <Projects />
-    <AboutMe />
+    <About />
     <Contact />
   </Layout>
 )
