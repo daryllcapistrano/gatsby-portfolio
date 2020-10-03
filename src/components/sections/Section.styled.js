@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const SectionWrapper = styled.section`
-  margin: 6em 1.5em;
+  margin: 0 1.5em 6em 1.5em;
 `
 
 export const SectionHeader = styled.div`

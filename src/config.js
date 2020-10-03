@@ -65,7 +65,7 @@ module.exports = {
     viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
   }),
   srConfigIntro: (delay = 300, viewFactor = 0.1) => ({
-    origin: "bottom",
+    origin: "left",
     distance: "30px",
     duration: 400,
     delay,
