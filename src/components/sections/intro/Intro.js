@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import { srConfigIntro } from "../../../config"
 import sr from "../../../utils/sr"
-
-import Button from "@material-ui/core/Button"
+import { Container, Button } from "@material-ui/core"
 import {
   IntroWrapper,
   TextContainer,
@@ -12,6 +11,8 @@ import {
   Description,
   ButtonContainer,
 } from "./Intro.styled"
+import { FaAngleDoubleDown } from "react-icons/fa"
+import "animate.css"
 
 const Intro = () => {
   const revealContainer = useRef(null)
@@ -35,6 +36,18 @@ const Intro = () => {
           </Button>
         </ButtonContainer>
       </TextContainer>
+      <Container
+        style={{
+          top: `90vh`,
+          position: `relative`,
+          width: `100%`,
+          textAlign: `center`,
+        }}
+        className="animate__animated animate__fadeInDown animate__delay-3s"
+      >
+        <div>learn more about me</div>
+        <FaAngleDoubleDown />
+      </Container>
     </IntroWrapper>
   )
 }
