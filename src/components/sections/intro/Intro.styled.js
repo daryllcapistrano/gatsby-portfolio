@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const IntroWrapper = styled.section`
   height: 100vh;
-  margin: 0 2.5em;
+  padding: 0 2.5em;
 `
 
 export const TextContainer = styled.div`

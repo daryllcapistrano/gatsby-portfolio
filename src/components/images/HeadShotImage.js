@@ -30,6 +30,7 @@ const HeadShotImage = () => {
     <Img
       fluid={data.placeholderImage.childImageSharp.fluid}
       alt="bloody headshot"
+      style={{ borderRadius: `50%`, width: `250px`, height: `250px` }}
     />
   )
 }

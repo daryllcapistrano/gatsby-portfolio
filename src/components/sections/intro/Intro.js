@@ -19,8 +19,8 @@ const Intro = () => {
   useEffect(() => sr.reveal(revealContainer.current, srConfigIntro()), [])
 
   return (
-    <IntroWrapper id="intro" className="load-hidden" ref={revealContainer}>
-      <TextContainer>
+    <IntroWrapper id="intro">
+      <TextContainer className="load-hidden" ref={revealContainer}>
         <Salutation>Hi, my name is</Salutation>
         <Name> Daryll Capistrano.</Name>
         <Title>I'm a full stack developer</Title>
@@ -42,10 +42,11 @@ const Intro = () => {
           position: `relative`,
           width: `100%`,
           textAlign: `center`,
+          fontSize: `1.25em`,
         }}
-        className="animate__animated animate__fadeInDown animate__delay-3s"
+        className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-2"
       >
-        <div>learn more about me</div>
+        {/* <div>learn more about me</div> */}
         <FaAngleDoubleDown />
       </Container>
     </IntroWrapper>

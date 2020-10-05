@@ -1,12 +1,13 @@
 import styled from "styled-components"
 
 export const SectionWrapper = styled.section`
-  margin: 0 1.5em 6em 1.5em;
+  margin: 0 0 6em 0;
+  padding: 0 1.5em;
 `
 
 export const SectionHeader = styled.div`
   border-bottom: 1px solid;
-  margin: 0 0 1em 0;
+  margin: 0 0 5em 0;
   padding: 0.75em;
 `
 export const SectionNumber = styled.span`
