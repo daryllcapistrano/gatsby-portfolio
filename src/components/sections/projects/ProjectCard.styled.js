@@ -7,7 +7,7 @@ export const Container = styled.div`
   margin: 1em 2em;
   transition: all 150ms ease-in-out;
   text-decoration: none;
-  color: #ddf8e8;
+  color: #eff9f0;
   @media (max-width: 950px) {
     grid-template-columns: 4.5fr 7fr;
   }
@@ -31,7 +31,7 @@ export const Container = styled.div`
   }
 `
 export const Content = styled.div`
-  background: #5f7de7;
+  background: #333640;
   padding: 4em 3em 2.25em 3em;
   position: relative;
   border-radius: 5px 0 0 5px;
@@ -57,10 +57,11 @@ export const Content = styled.div`
 `
 export const Stack = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 2em 0;
-  width: 50%;
-  color: #ddf8e8;
+  width: 100%;
+  font-size: 1.25em;
+  color: inherit;
 `
 export const Title = styled.h2`
   margin-bottom: 0.5em;
@@ -100,7 +101,7 @@ export const Action = styled.a`
   }
 `
 export const ImageContainer = styled.div`
-  background: #ddf8e8;
+  background: inherit;
   display: flex;
   justify-content: center;
   align-items: flex-end;

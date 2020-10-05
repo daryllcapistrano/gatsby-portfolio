@@ -3,8 +3,8 @@ import { createGlobalStyle } from "styled-components"
 export const GlobalStyle = createGlobalStyle` 
   html, body {
     font-family: "Rubik", sans-serif;
-    background-color: #091540;
-    color: #DDF8E8;
+    background-color: #EFF9F0;
+    color: #13070C;
     max-width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -16,8 +16,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 `
 export const theme = {
-  primaryDark: "#0D0C1D",
-  primaryLight: "#EFFFFA",
+  primaryDark: "#13070C",
+  primaryLight: "#EFF9F0",
   primaryHover: "#343078",
   mobile: "576px",
 }

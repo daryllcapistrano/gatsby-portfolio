@@ -1,27 +1,40 @@
 import React from "react"
 import { FaBootstrap, FaReact } from "react-icons/fa"
+import { SiStyledComponents, SiMaterialUi } from "react-icons/si"
+import { DiMongodb } from "react-icons/di"
+import { GrGatsbyjs } from "react-icons/gr"
 
 export const ProjectList = [
   {
-    stack: [<FaBootstrap />, <FaReact />, <FaReact />],
     title: "Skate Spot App",
+    stack: [
+      <FaReact />,
+      <FaBootstrap />,
+      <SiStyledComponents />,
+      <DiMongodb />,
+    ],
     description:
-      "A convenient way to save skatespots on the go and serves as a directory that you can share with friends.",
+      "A convenient way to log, find and share skate spots. An app for skateboarders",
     detailLink: "https://github.com/daryllcapistrano/skatespot-client",
   },
   {
-    stack: [<FaBootstrap />, <FaReact />, <FaReact />],
     title: "Photography and Video Portfolio",
+    stack: [
+      <FaReact />,
+      <GrGatsbyjs />,
+      <SiMaterialUi />,
+      <SiStyledComponents />,
+    ],
     description:
-      "Website created for a friend that showcases his work with photography and video.",
+      "Freelance website for a creative friend that showcases his work with photography and video.",
     detailLink:
       "https://github.com/daryllcapistrano/keaton-portfolio-gatsby-v2",
   },
   {
-    stack: [<FaBootstrap />, <FaReact />, <FaReact />],
     title: "Game of S.K.A.T.E.",
+    stack: [<FaReact />, <SiMaterialUi />, <SiStyledComponents />],
     description:
-      "A S.K.A.T.E. game score tracker using React hooks to extract stateful logic from components",
+      "S.K.A.T.E. game score tracker using React hooks to extract stateful logic from components",
     detailLink: "https://github.com/daryllcapistrano/Game-of-SKATE",
   },
 ]

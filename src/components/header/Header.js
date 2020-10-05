@@ -47,7 +47,7 @@ export default function Header(props) {
               <Menu open={open} setOpen={setOpen} id={menuId} />
             </FocusLock>
           </div>
-          <span
+          {/* <span
             style={{
               width: `50%`,
               textAlign: `end`,
@@ -59,7 +59,7 @@ export default function Header(props) {
                 😤 😤 😤{" "}
               </span>
             </h2>
-          </span>
+          </span> */}
         </StyledToolbar>
       </AppBar>
     </HideOnScroll>

@@ -24,9 +24,8 @@ const Projects = () => {
         </SectionHeader>
         <Grid container>
           {ProjectList.map((project, index) => (
-            <Grid item xs={12}>
+            <Grid item xs={12} key={index}>
               <ProjectCard
-                key={index}
                 stack={project.stack}
                 title={project.title}
                 description={project.description}
