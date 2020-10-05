@@ -8,16 +8,16 @@ const Menu = ({ open, ...props }) => {
 
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-      <a href="#projects" tabIndex={tabIndex}>
-        <span aria-hidden="true">💁🏻‍♂️</span>
+      <a href="#projects" tabIndex={tabIndex} onClick={isHidden}>
+        {/* <span aria-hidden="true">💁🏻‍♂️</span> */}
         Projects
       </a>
       <a href="#about" tabIndex={tabIndex}>
-        <span aria-hidden="true">💸</span>
+        {/* <span aria-hidden="true">💸</span> */}
         About Me
       </a>
       <a href="#contact" tabIndex={tabIndex}>
-        <span aria-hidden="true">📩</span>
+        {/* <span aria-hidden="true">📩</span> */}
         Contact
       </a>
     </StyledMenu>

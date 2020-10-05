@@ -10,10 +10,12 @@ export const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
+
   ${"" /* prevents flicker from scroll reveal animation */}
   html.sr .load-hidden {
     visibility: hidden;
-}
+  }
+
 `
 export const theme = {
   primaryDark: "#13070C",
