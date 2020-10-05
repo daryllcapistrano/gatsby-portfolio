@@ -31,10 +31,11 @@ const AboutMe = () => {
           <Grid item xs={12} sm={6}>
             <TextWrapper>
               <p>
-                I'm a self-taught developer with 4 years experience. Currently
-                living in Portland, Oregon. I create websites that are
-                thoughtfully designed and built with performance and best
-                practices in mind.
+                I'm a <strong>self-taught full stack</strong> developer with{" "}
+                <strong>4 years</strong> of experience. Currently living in{" "}
+                <strong> Portland, Oregon</strong>. I create websites and apps
+                that are thoughtfully designed and built with performance and
+                best practices in mind.
               </p>
             </TextWrapper>
           </Grid>

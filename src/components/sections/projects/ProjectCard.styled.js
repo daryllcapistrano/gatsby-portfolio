@@ -69,6 +69,7 @@ export const Title = styled.h2`
 export const Description = styled.div`
   font-size: 1em;
   font-weight: 300;
+  line-height: 1.5em;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   margin-bottom: 5em;

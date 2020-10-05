@@ -10,4 +10,5 @@ export const TextWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   height: 100%;
+  line-height: 2em;
 `

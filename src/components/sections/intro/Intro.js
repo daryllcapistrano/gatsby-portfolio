@@ -22,8 +22,8 @@ const Intro = () => {
     <IntroWrapper id="intro">
       <TextContainer className="load-hidden" ref={revealContainer}>
         <Salutation>Hi, my name is</Salutation>
-        <Name> Daryll Capistrano.</Name>
-        <Title>I'm a full stack developer</Title>
+        <Name> Daryll Capistrano</Name>
+        <Title>I build things for the internet</Title>
         <Description></Description>
         <ButtonContainer>
           <Button
