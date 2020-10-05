@@ -19,4 +19,5 @@ export const SectionTitle = styled.span`
   font-weight: 500;
   font-size: 1.25em;
   padding: 0.25em;
+  margin-left: 0.5em;
 `

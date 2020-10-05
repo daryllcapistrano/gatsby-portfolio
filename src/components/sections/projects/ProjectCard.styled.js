@@ -90,7 +90,7 @@ export const Action = styled.a`
     transition: transform 400ms ease-in-out;
   }
   &:hover {
-    color: #4e6ee4;
+    color: yellow;
     transition: all 150ms ease-in-out;
     span {
       transform: translateX(0px);

@@ -2,7 +2,11 @@ import React, { useEffect, useRef } from "react"
 import { srConfig } from "../../../config"
 import sr from "../../../utils/sr"
 import { Container, Grid } from "@material-ui/core/"
-import { TextWrapper } from "./Contact.styled"
+// import { TextWrapper } from "./Contact.styled"
+// import { Button } from "@material-ui/core"
+import { MdEmail } from "react-icons/md"
+import { GrInstagram } from "react-icons/gr"
+import { GoMarkGithub } from "react-icons/go"
 import {
   SectionWrapper,
   SectionHeader,
@@ -21,25 +25,42 @@ const Contact = () => {
           <SectionNumber>03.</SectionNumber>
           <SectionTitle>Get In Touch With Me</SectionTitle>
         </SectionHeader>
-        <Grid container>
-          <Grid item xs={12} sm={6}>
-            <TextWrapper>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                fugit dolorem pariatur iusto, animi saepe, itaque sequi rem nisi
-                recusandae vel distinctio. Adipisci.
-              </p>
-            </TextWrapper>
+        <Grid container style={{ textAlign: `center` }}>
+          <Grid item xs={4}>
+            {/* <Button
+              color="inherit"
+              variant="text"
+              size="small"
+              target="_blank"
+              rel="noopener noreferer"
+              href="mailto:dcapistrano.dev@gmail.com"
+              endIcon={<MdEmail />}
+            /> */}
+            <MdEmail />
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <div style={{ margin: `1em` }}>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
-                perspiciatis repellendus quia id laboriosam earum nesciunt
-                explicabo laudantium aperiam facere unde, aut dignissimos
-                voluptates ratione, enim ex esse, inventore at asperiores.
-              </p>
-            </div>
+          <Grid item xs={4}>
+            {/* <Button
+              color="inherit"
+              variant="text"
+              size="small"
+              target="_blank"
+              rel="noopener noreferer"
+              href="https://instagram.com/brotherdaryll"
+              endIcon={<GrInstagram />}
+            /> */}
+            <GrInstagram />
+          </Grid>
+          <Grid item xs={4}>
+            {/* <Button
+              color="inherit"
+              variant="text"
+              size="small"
+              target="_blank"
+              rel="noopener noreferer"
+              href="https://github.com/daryllcapistrano"
+              endIcon={<GoMarkGithub />}
+            /> */}
+            <GoMarkGithub />
           </Grid>
         </Grid>
       </Container>
