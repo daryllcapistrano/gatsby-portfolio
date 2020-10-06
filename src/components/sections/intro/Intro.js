@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react"
 import { srConfigIntro } from "../../../config"
 import sr from "../../../utils/sr"
-import { Container, Button } from "@material-ui/core"
 import {
   IntroWrapper,
   TextContainer,
@@ -10,6 +9,8 @@ import {
   Title,
   Description,
   ButtonContainer,
+  StyledButton,
+  CallToAction,
 } from "./Intro.styled"
 import { FaAngleDoubleDown } from "react-icons/fa"
 import "animate.css"
@@ -26,29 +27,13 @@ const Intro = () => {
         <Title>I build things for the internet</Title>
         <Description></Description>
         <ButtonContainer>
-          <Button
-            variant="outlined"
-            color="primary"
-            disableElevation={true}
-            href="#contact"
-          >
-            hire me !
-          </Button>
+          <StyledButton href="#contact">hire me !</StyledButton>
         </ButtonContainer>
       </TextContainer>
-      <Container
-        style={{
-          top: `90vh`,
-          position: `relative`,
-          width: `100%`,
-          textAlign: `center`,
-          fontSize: `1.25em`,
-        }}
-        className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-2"
-      >
+      <CallToAction className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-3">
         {/* <div>learn more about me</div> */}
         <FaAngleDoubleDown />
-      </Container>
+      </CallToAction>
     </IntroWrapper>
   )
 }

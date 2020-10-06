@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Container, Button } from "@material-ui/core"
 
 export const IntroWrapper = styled.section`
   height: 100vh;
@@ -28,4 +29,34 @@ export const Description = styled.p`
 
 export const ButtonContainer = styled.div`
   margin: 2.5em 0;
+`
+
+export const StyledButton = styled(Button)`
+  border: 2px solid #3f51b5 !important;
+  border-radius: 30px !important;
+  color: #3f51b5 !important;
+  &:hover {
+    border: 2px solid #3f51b5 !important;
+    color: white !important;
+    background-color: #3f51b5 !important;
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+  &:focus {
+    border: 2px solid #3f51b5 !important;
+    color: white !important;
+    background-color: #3f51b5 !important;
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+    transition-property: transform;
+  }
+`
+
+export const CallToAction = styled(Container)`
+  top: 90vh;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25em;
 `
