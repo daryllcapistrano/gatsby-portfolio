@@ -20,7 +20,7 @@ const AboutMe = () => {
       <Container className="load-hidden" ref={revealContainer}>
         <SectionHeader>
           <SectionNumber>02.</SectionNumber>
-          <SectionTitle>Some Background</SectionTitle>
+          <SectionTitle>Some Background Info</SectionTitle>
         </SectionHeader>
         <Grid container>
           <Grid item xs={12} sm={6}>

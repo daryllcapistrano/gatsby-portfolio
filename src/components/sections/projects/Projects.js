@@ -20,7 +20,7 @@ const Projects = () => {
       <Container className="load-hidden" ref={revealContainer}>
         <SectionHeader>
           <SectionNumber>01.</SectionNumber>
-          <SectionTitle>Things I've Built</SectionTitle>
+          <SectionTitle>Featured Projects</SectionTitle>
         </SectionHeader>
         <Grid container>
           {ProjectList.map((project, index) => (
