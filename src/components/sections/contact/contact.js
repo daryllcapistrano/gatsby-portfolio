@@ -19,7 +19,7 @@ const Contact = () => {
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
 
   return (
-    <SectionWrapper id="contact">
+    <SectionWrapper id="contact" style={{ height: `40.625em` }}>
       <Container className="load-hidden" ref={revealContainer}>
         <SectionHeader>
           <SectionNumber>03.</SectionNumber>

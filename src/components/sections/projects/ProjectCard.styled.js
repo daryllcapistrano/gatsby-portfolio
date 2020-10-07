@@ -34,7 +34,7 @@ export const Container = styled.div`
   }
 `
 export const Content = styled.div`
-  background: #333640;
+  background: #13070c;
   padding: 4em 3em 2.25em 3em;
   position: relative;
   ${"" /* border-radius: 5px 0 0 5px; */}

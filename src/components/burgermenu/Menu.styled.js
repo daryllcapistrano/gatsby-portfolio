@@ -25,8 +25,7 @@ export const StyledMenu = styled.nav`
     text-decoration: none;
     transition: color 0.3s linear;
     @media (max-width: 576px) {
-      font-size: 1.5rem;
-      text-align: center;
+      font-size: 1.25rem;
     }
     &:hover {
       color: #cba328;

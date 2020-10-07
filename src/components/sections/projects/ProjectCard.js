@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Undraw from "../../../assets/svg/undraw_progressive_app_m9ms.svg"
 import {
   Container,
@@ -33,10 +34,9 @@ const ProjectCard = props => (
 
 export default ProjectCard
 
-// ProjectCard.propTypes = {
-//     category: PropTypes.array.isRequired,
-//     thumbnail: PropTypes.object.isRequired,
-//     title: PropTypes.array.isRequired,
-//     description: PropTypes.array.isRequired,
-//     uid: PropTypes.string.isRequired
-// }
+ProjectCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  stack: PropTypes.array.isRequired,
+  detailLink: PropTypes.string.isRequired,
+}

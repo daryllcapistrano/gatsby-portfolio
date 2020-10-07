@@ -7,12 +7,14 @@ export const GlobalStyle = createGlobalStyle`
     color: #13070C;
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll !important;
     scroll-behavior: smooth;
   }
 
   a {
     color: #13070C;
   }
+  
 
   ${"" /* prevents flicker from scroll reveal animation */}
   html.sr .load-hidden {

@@ -47,19 +47,6 @@ export default function Header(props) {
               <Menu open={open} setOpen={setOpen} id={menuId} />
             </FocusLock>
           </div>
-          {/* <span
-            style={{
-              width: `50%`,
-              textAlign: `end`,
-            }}
-          >
-            <h2>
-              <span role="img" aria-label="h2">
-                {" "}
-                😤 😤 😤{" "}
-              </span>
-            </h2>
-          </span> */}
         </StyledToolbar>
       </AppBar>
     </HideOnScroll>

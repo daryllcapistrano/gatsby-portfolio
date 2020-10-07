@@ -1,24 +1,24 @@
 import React from "react"
-import { bool } from "prop-types"
+import { bool, func } from "prop-types"
 import { StyledMenu } from "./Menu.styled"
 
-const Menu = ({ open, ...props }) => {
+const Menu = ({ open, setOpen, ...props }) => {
   const isHidden = open ? true : false
   const tabIndex = isHidden ? 0 : -1
 
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-      <a href="#projects" tabIndex={tabIndex}>
+      <a href="#projects" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
         {/* <span aria-hidden="true">💁🏻‍♂️</span> */}
-        Projects
+        Featured Projects
       </a>
-      <a href="#about" tabIndex={tabIndex}>
+      <a href="#about" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
         {/* <span aria-hidden="true">💸</span> */}
-        About Me
+        Get to know me
       </a>
-      <a href="#contact" tabIndex={tabIndex}>
+      <a href="#contact" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
         {/* <span aria-hidden="true">📩</span> */}
-        Contact
+        Get in touch
       </a>
     </StyledMenu>
   )
@@ -26,6 +26,7 @@ const Menu = ({ open, ...props }) => {
 
 Menu.propTypes = {
   open: bool.isRequired,
+  setOpen: func.isRequired,
 }
 
 export default Menu

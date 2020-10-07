@@ -50,17 +50,19 @@ export const StyledButton = styled(Button)`
     border: 2px solid #0038a8 !important;
     color: white !important;
     background-color: #0038a8 !important;
-    transform: scale(1.05);
+    transition: color 0.4s linear;
+    ${"" /* transform: scale(1.05);
     transition-duration: 0.3s;
-    transition-property: transform;
+    transition-property: transform; */}
   }
   &:focus {
     border: 2px solid #0038a8 !important;
     color: white !important;
     background-color: #0038a8 !important;
-    transform: scale(1.05);
+    transition: color 0.4s linear;
+    ${"" /* transform: scale(1.05);
     transition-duration: 0.2s;
-    transition-property: transform;
+    transition-property: transform; */}
   }
 `
 

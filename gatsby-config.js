@@ -13,13 +13,19 @@ module.exports = {
         path: `${__dirname}/src/assets/png`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/assets/images`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `jpg`,
+        path: `${__dirname}/src/assets/jpg`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {

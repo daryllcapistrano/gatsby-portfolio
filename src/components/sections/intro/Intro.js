@@ -22,7 +22,7 @@ function HideOnScroll(props) {
   const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 75 })
 
   return (
-    <Slide appear={false} direction="down" in={!trigger} timeout={450}>
+    <Slide appear={false} in={!trigger} timeout={450}>
       {children}
     </Slide>
   )
@@ -40,7 +40,16 @@ export default function Intro(props) {
         <Title>I build things for the internet</Title>
         <Description></Description>
         <ButtonContainer>
-          <StyledButton href="#contact">hire me !</StyledButton>
+          <StyledButton href="#contact">
+            hire me
+            <span
+              role="img"
+              aria-label="fingers crossed emoji"
+              style={{ margin: `0 0 0 8px` }}
+            >
+              🤞
+            </span>
+          </StyledButton>
         </ButtonContainer>
       </TextContainer>
       <HideOnScroll {...props}>
