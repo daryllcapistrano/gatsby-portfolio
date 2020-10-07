@@ -7,7 +7,7 @@ export const SectionWrapper = styled.section`
 
 export const SectionHeader = styled.div`
   border-bottom: 1px solid;
-  margin: 0 0 5em 0;
+  margin: 5em 0;
   padding: 0.75em;
 `
 export const SectionNumber = styled.span`

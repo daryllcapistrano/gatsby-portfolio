@@ -10,6 +10,9 @@ export const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
+  a {
+    color: #13070C;
+  }
 
   ${"" /* prevents flicker from scroll reveal animation */}
   html.sr .load-hidden {
@@ -20,6 +23,6 @@ export const GlobalStyle = createGlobalStyle`
 export const theme = {
   primaryDark: "#13070C",
   primaryLight: "#EFF9F0",
-  primaryHover: "#343078",
+  primaryHover: "#CBA328",
   mobile: "576px",
 }

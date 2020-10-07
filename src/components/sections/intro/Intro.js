@@ -1,4 +1,7 @@
 import React, { useEffect, useRef } from "react"
+import { FaAngleDoubleDown } from "react-icons/fa"
+import useScrollTrigger from "@material-ui/core/useScrollTrigger"
+import Slide from "@material-ui/core/Slide"
 import { srConfigIntro } from "../../../config"
 import sr from "../../../utils/sr"
 import {
@@ -12,10 +15,20 @@ import {
   StyledButton,
   CallToAction,
 } from "./Intro.styled"
-import { FaAngleDoubleDown } from "react-icons/fa"
 import "animate.css"
 
-const Intro = () => {
+function HideOnScroll(props) {
+  const { children } = props
+  const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 75 })
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger} timeout={450}>
+      {children}
+    </Slide>
+  )
+}
+
+export default function Intro(props) {
   const revealContainer = useRef(null)
   useEffect(() => sr.reveal(revealContainer.current, srConfigIntro()), [])
 
@@ -30,12 +43,13 @@ const Intro = () => {
           <StyledButton href="#contact">hire me !</StyledButton>
         </ButtonContainer>
       </TextContainer>
-      <CallToAction className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-3">
-        {/* <div>learn more about me</div> */}
-        <FaAngleDoubleDown />
-      </CallToAction>
+      <HideOnScroll {...props}>
+        <CallToAction className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-3">
+          <a href="#projects">
+            <FaAngleDoubleDown />
+          </a>
+        </CallToAction>
+      </HideOnScroll>
     </IntroWrapper>
   )
 }
-
-export default Intro

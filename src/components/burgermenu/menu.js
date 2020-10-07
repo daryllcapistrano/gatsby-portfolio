@@ -8,7 +8,7 @@ const Menu = ({ open, ...props }) => {
 
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-      <a href="#projects" tabIndex={tabIndex} onClick={isHidden}>
+      <a href="#projects" tabIndex={tabIndex}>
         {/* <span aria-hidden="true">💁🏻‍♂️</span> */}
         Projects
       </a>

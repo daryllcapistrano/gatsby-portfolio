@@ -3,9 +3,9 @@ import { srConfig } from "../../../config"
 import sr from "../../../utils/sr"
 import HeadShotImage from "../../images/HeadShotImage"
 import { Container, Grid } from "@material-ui/core/"
-import { ImageWrapper, TextWrapper } from "./About.styled"
+import { ImageWrapper, TextWrapper, SectionWrapper } from "./About.styled"
 import {
-  SectionWrapper,
+  // SectionWrapper,
   SectionHeader,
   SectionNumber,
   SectionTitle,

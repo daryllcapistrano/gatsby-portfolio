@@ -1,5 +1,11 @@
 import styled from "styled-components"
 
+export const SectionWrapper = styled.section`
+  margin: 0 0 6em 0;
+  padding: 0 1.5em;
+  ${"" /* background: transparent; */}
+`
+
 export const ImageWrapper = styled.div`
   margin: 1em;
   text-align: -webkit-center;

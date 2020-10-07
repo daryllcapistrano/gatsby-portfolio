@@ -14,11 +14,11 @@ export const StyledMenu = styled.nav`
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
-  border-right: 2px solid #13070c;
+  border-right: 1px solid #13070c;
   a {
-    font-size: 2rem;
+    font-size: 2em;
     text-transform: uppercase;
-    padding: 2rem 0;
+    padding: 1em 0 1em 1em;
     font-weight: bold;
     letter-spacing: 0.5rem;
     color: #13070c;
@@ -29,8 +29,9 @@ export const StyledMenu = styled.nav`
       text-align: center;
     }
     &:hover {
-      color: grey;
-      ${"" /* change above to correct color value */}
+      color: #cba328;
+      border-left: 2px solid #cba328;
+      ${"" /* change above to correct color value */};
     }
   }
 `

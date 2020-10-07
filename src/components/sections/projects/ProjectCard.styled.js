@@ -3,7 +3,8 @@ import styled from "styled-components"
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 4fr 7fr;
-  box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11);
   margin: 1em 2em;
   transition: all 150ms ease-in-out;
   text-decoration: none;
@@ -18,14 +19,16 @@ export const Container = styled.div`
     margin: 1em 0;
   }
   &:hover {
-    box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+      0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
     transition: all 150ms ease-in-out;
     .Content::before {
-      opacity: 0.1;
+      ${"" /* opacity: 0.05; */}
       transition: all 150ms ease-in-out;
     }
     .ImageContainer::before {
-      opacity: 0.1;
+      ${"" /* opacity: 0.05; */}
       transition: all 150ms ease-in-out;
     }
   }
@@ -34,7 +37,7 @@ export const Content = styled.div`
   background: #333640;
   padding: 4em 3em 2.25em 3em;
   position: relative;
-  border-radius: 5px 0 0 5px;
+  ${"" /* border-radius: 5px 0 0 5px; */}
   &:before {
     ${"" /* position: absolute; */}
     content: "";
@@ -52,7 +55,7 @@ export const Content = styled.div`
   }
   @media (max-width: 768px) {
     grid-row: 2;
-    border-radius: 0 0 5px 5px;
+    ${"" /* border-radius: 0 0 5px 5px; */}
   }
 `
 export const Stack = styled.div`
@@ -109,14 +112,15 @@ export const ImageContainer = styled.div`
   position: relative;
   padding-left: 2em;
   padding-right: 2em;
-  border-radius: 0 5px 5px 0;
+  border: 1px solid #13070C;
+  ${"" /* border-radius: 0 5px 5px 0; */}
   @media (max-width: 768px) {
     padding: 2em;
     max-height: 300px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border-radius: 5px 5px 0 0;
+    ${"" /* border-radius: 5px 5px 0 0; */}
   }
   &:before {
     position: absolute;
@@ -134,6 +138,7 @@ export const ImageContainer = styled.div`
     width: 100%;
     height: auto;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
+    ${"" /* border-radius: 0 5px 5px 0; */}
     @media (max-width: 760px) {
       max-width: 300px;
       width: 100%;
