@@ -17,6 +17,12 @@ export const StyledBurger = styled.button`
   &:focus {
     outline: none;
   }
+
+  ${"" /* hide on tablet size and above */}
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
+
   span {
     width: 2rem;
     height: 0.25rem;

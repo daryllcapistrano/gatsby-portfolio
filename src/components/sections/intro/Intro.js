@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from "react"
+import { Link } from "gatsby"
 import { FaAngleDoubleDown } from "react-icons/fa"
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import Slide from "@material-ui/core/Slide"
+import IconButton from "@material-ui/core/IconButton"
 import { srConfigIntro } from "../../../config"
 import sr from "../../../utils/sr"
 import {
@@ -35,11 +37,11 @@ export default function Intro(props) {
   return (
     <IntroWrapper id="intro">
       <TextContainer className="load-hidden" ref={revealContainer}>
-        <Salutation>Hi, my name is</Salutation>
+        {/* <Salutation>Hi, my name is</Salutation> */}
         <Name> Daryll Capistrano</Name>
-        <Title>I build things for the internet</Title>
-        <Description></Description>
-        <ButtonContainer>
+        <Title>Web Developer</Title>
+        <Description>Based in Las Vegas</Description>
+        {/* <ButtonContainer>
           <StyledButton href="#contact">
             hire me
             <span
@@ -50,15 +52,17 @@ export default function Intro(props) {
               🤞
             </span>
           </StyledButton>
-        </ButtonContainer>
-        <HideOnScroll {...props}>
-          <CallToAction className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-3">
-            <a href="#about">
-              <FaAngleDoubleDown />
-            </a>
-          </CallToAction>
-        </HideOnScroll>
+        </ButtonContainer> */}
       </TextContainer>
+      <HideOnScroll {...props}>
+        <CallToAction className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-3">
+          <Link to="#about">
+            <IconButton aria-label="scroll to introduction">
+              <FaAngleDoubleDown />
+            </IconButton>
+          </Link>
+        </CallToAction>
+      </HideOnScroll>
       {/* <HideOnScroll {...props}>
         <CallToAction className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-3">
           <a href="#about">

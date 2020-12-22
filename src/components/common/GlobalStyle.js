@@ -4,21 +4,12 @@ export const GlobalStyle = createGlobalStyle`
   html, body {
     font-family: "Rubik", sans-serif;
     background-color: #2D2E40;
-    color: #F25C05;
+    color: #f2c5bb;
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: scroll !important;
     scroll-behavior: smooth;
   }
-
-  ${
-    "" /* refactor below, currently only changes the down chevron color, try targeting only that element instead */
-  }
-
-  a {
-    color: white;
-  }
-  
 
   ${"" /* prevents flicker from scroll reveal animation */}
   html.sr .load-hidden {
