@@ -19,8 +19,8 @@ const AboutMe = () => {
     <SectionWrapper id="about" style={{ height: `43.75em` }}>
       <Container className="load-hidden" ref={revealContainer}>
         <SectionHeader>
-          <SectionNumber>02.</SectionNumber>
-          <SectionTitle>Some Background Info</SectionTitle>
+          <SectionNumber>01.</SectionNumber>
+          <SectionTitle>My Background Info</SectionTitle>
         </SectionHeader>
         <Grid container>
           <Grid item xs={12} sm={6}>

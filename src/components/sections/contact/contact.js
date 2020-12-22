@@ -14,6 +14,8 @@ import {
   SectionTitle,
 } from "../Section.styled"
 
+import { SocialButton } from "./Contact.styled"
+
 const Contact = () => {
   const revealContainer = useRef(null)
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
@@ -26,41 +28,36 @@ const Contact = () => {
           <SectionTitle>Get In Touch With Me</SectionTitle>
         </SectionHeader>
         <Grid container style={{ textAlign: `center` }}>
-          <Grid item xs={4}>
-            {/* <Button
-              color="inherit"
-              variant="text"
-              size="small"
-              target="_blank"
-              rel="noopener noreferer"
+          <Grid item xs={12} sm={4}>
+            <SocialButton
               href="mailto:dcapistrano.dev@gmail.com"
-              endIcon={<MdEmail />}
-            /> */}
-            <MdEmail />
+              startIcon={<MdEmail />}
+              variant="outlined"
+            >
+              Email
+            </SocialButton>
           </Grid>
-          <Grid item xs={4}>
-            {/* <Button
-              color="inherit"
-              variant="text"
-              size="small"
+          <Grid item xs={12} sm={4}>
+            <SocialButton
+              href="https://www.instagram.com/brotherdaryll"
+              startIcon={<GrInstagram />}
+              variant="outlined"
               target="_blank"
-              rel="noopener noreferer"
-              href="https://instagram.com/brotherdaryll"
-              endIcon={<GrInstagram />}
-            /> */}
-            <GrInstagram />
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </SocialButton>
           </Grid>
-          <Grid item xs={4}>
-            {/* <Button
-              color="inherit"
-              variant="text"
-              size="small"
-              target="_blank"
-              rel="noopener noreferer"
+          <Grid item xs={12} sm={4}>
+            <SocialButton
               href="https://github.com/daryllcapistrano"
-              endIcon={<GoMarkGithub />}
-            /> */}
-            <GoMarkGithub />
+              startIcon={<GoMarkGithub />}
+              variant="outlined"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </SocialButton>
           </Grid>
         </Grid>
       </Container>

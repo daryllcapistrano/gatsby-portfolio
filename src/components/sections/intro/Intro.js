@@ -51,14 +51,21 @@ export default function Intro(props) {
             </span>
           </StyledButton>
         </ButtonContainer>
+        <HideOnScroll {...props}>
+          <CallToAction className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-3">
+            <a href="#about">
+              <FaAngleDoubleDown />
+            </a>
+          </CallToAction>
+        </HideOnScroll>
       </TextContainer>
-      <HideOnScroll {...props}>
+      {/* <HideOnScroll {...props}>
         <CallToAction className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-3">
-          <a href="#projects">
+          <a href="#about">
             <FaAngleDoubleDown />
           </a>
         </CallToAction>
-      </HideOnScroll>
+      </HideOnScroll> */}
     </IntroWrapper>
   )
 }

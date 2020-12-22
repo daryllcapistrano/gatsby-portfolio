@@ -35,7 +35,7 @@ export const Container = styled.div`
 `
 export const Content = styled.div`
   background: #13070c;
-  padding: 4em 3em 2.25em 3em;
+  padding: 1em 1.5em;
   position: relative;
   ${"" /* border-radius: 5px 0 0 5px; */}
   &:before {
@@ -61,7 +61,7 @@ export const Content = styled.div`
 export const Stack = styled.div`
   display: flex;
   justify-content: space-evenly;
-  margin: 2em 0;
+  margin: 1.5em 0;
   width: 100%;
   font-size: 1.25em;
   color: inherit;
@@ -76,7 +76,7 @@ export const Description = styled.div`
   line-height: 1.5em;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
-  margin-bottom: 5em;
+  margin-bottom: 2.5em;
   @media (max-width: 768px) {
     margin-bottom: 2.5em;
   }
@@ -87,6 +87,7 @@ export const Action = styled.a`
   text-decoration: none;
   color: #ddf8e8;
   transition: all 150ms ease-in-out;
+  float: right;
   span {
     margin-left: 1.25em;
     transform: translateX(-8px);
@@ -116,7 +117,7 @@ export const ImageContainer = styled.div`
   ${"" /* border-radius: 0 5px 5px 0; */}
   @media (max-width: 768px) {
     padding: 2em;
-    max-height: 300px;
+    max-height: auto;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -126,7 +127,7 @@ export const ImageContainer = styled.div`
     position: absolute;
     content: "";
     width: 100%;
-    height: 100%;
+    height: auto;
     left: 0;
     top: 0;
     background: black;

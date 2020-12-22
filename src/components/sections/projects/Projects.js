@@ -19,21 +19,21 @@ const Projects = () => {
     <SectionWrapper id="projects">
       <Container className="load-hidden" ref={revealContainer}>
         <SectionHeader>
-          <SectionNumber>01.</SectionNumber>
+          <SectionNumber>02.</SectionNumber>
           <SectionTitle>Featured Projects</SectionTitle>
         </SectionHeader>
-        <Grid container>
-          {ProjectList.map((project, index) => (
-            <Grid item xs={12} key={index}>
-              <ProjectCard
-                stack={project.stack}
-                title={project.title}
-                description={project.description}
-                detailLink={project.detailLink}
-              />
-            </Grid>
-          ))}
-        </Grid>
+        {/* <Grid container> */}
+        {ProjectList.map((project, index, id) => (
+          <Grid item xs={12} key={index}>
+            <ProjectCard
+              // stack={project.stack}
+              title={project.title}
+              description={project.description}
+              detailLink={project.detailLink}
+            />
+          </Grid>
+        ))}
+        {/* </Grid> */}
       </Container>
     </SectionWrapper>
   )

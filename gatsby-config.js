@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `dcapistrano.dev`,
-    description: `My Personal Portfolio Site.`,
-    author: `dcapistrano.dev`,
+    title: `Portfolio`,
+    description: `Full Stack Web Developer`,
+    author: `Daryll Capistrano`,
+    location: `Portland, Oregon`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
