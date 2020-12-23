@@ -14,10 +14,10 @@ module.exports = {
     viewFactor,
     viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
   }),
-  srConfigIntro: (delay = 300, viewFactor = 0.1) => ({
+  srConfigIntro: (delay = 500, viewFactor = 0.1) => ({
     origin: "left",
     distance: "30px",
-    duration: 400,
+    duration: 800,
     delay,
     rotate: { x: 0, y: 0, z: 0 },
     opacity: 0,

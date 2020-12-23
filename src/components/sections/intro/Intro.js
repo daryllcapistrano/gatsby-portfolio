@@ -1,21 +1,19 @@
 import React, { useEffect, useRef } from "react"
 import { Link } from "gatsby"
+import { IconContext } from "react-icons"
 import { FaAngleDoubleDown } from "react-icons/fa"
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import Slide from "@material-ui/core/Slide"
 import IconButton from "@material-ui/core/IconButton"
-import { srConfigIntro } from "../../../config"
+import { srConfigIntro } from "../../../utils/config"
 import sr from "../../../utils/sr"
 import {
-  IntroWrapper,
+  Wrapper,
   TextContainer,
-  Salutation,
   Name,
   Title,
   Description,
-  ButtonContainer,
-  StyledButton,
-  CallToAction,
+  DownChevron,
 } from "./Intro.styled"
 import "animate.css"
 
@@ -35,41 +33,23 @@ export default function Intro(props) {
   useEffect(() => sr.reveal(revealContainer.current, srConfigIntro()), [])
 
   return (
-    <IntroWrapper id="intro">
+    <Wrapper id="intro">
       <TextContainer className="load-hidden" ref={revealContainer}>
-        {/* <Salutation>Hi, my name is</Salutation> */}
         <Name> Daryll Capistrano</Name>
         <Title>Web Developer</Title>
         <Description>Based in Las Vegas</Description>
-        {/* <ButtonContainer>
-          <StyledButton href="#contact">
-            hire me
-            <span
-              role="img"
-              aria-label="fingers crossed emoji"
-              style={{ margin: `0 0 0 8px` }}
-            >
-              🤞
-            </span>
-          </StyledButton>
-        </ButtonContainer> */}
       </TextContainer>
       <HideOnScroll {...props}>
-        <CallToAction className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-3">
+        <DownChevron className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-2">
           <Link to="#about">
             <IconButton aria-label="scroll to introduction">
-              <FaAngleDoubleDown />
+              <IconContext.Provider value={{ color: `#191E24` }}>
+                <FaAngleDoubleDown />
+              </IconContext.Provider>
             </IconButton>
           </Link>
-        </CallToAction>
+        </DownChevron>
       </HideOnScroll>
-      {/* <HideOnScroll {...props}>
-        <CallToAction className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-3">
-          <a href="#about">
-            <FaAngleDoubleDown />
-          </a>
-        </CallToAction>
-      </HideOnScroll> */}
-    </IntroWrapper>
+    </Wrapper>
   )
 }

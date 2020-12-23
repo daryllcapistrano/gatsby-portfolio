@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components"
 export const GlobalStyle = createGlobalStyle` 
   html, body {
     font-family: "Rubik", sans-serif;
-    background-color: #0C1618;
+    background-color: #121212;
     color: #DCE0D9;
     max-width: 100%;
     overflow-x: hidden;

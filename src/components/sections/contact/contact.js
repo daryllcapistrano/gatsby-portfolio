@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react"
-import { srConfig } from "../../../config"
+import { srConfig } from "../../../utils/config"
 import sr from "../../../utils/sr"
 import { Container, Grid } from "@material-ui/core/"
 // import { TextWrapper } from "./Contact.styled"
