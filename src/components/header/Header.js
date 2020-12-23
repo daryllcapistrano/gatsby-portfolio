@@ -42,7 +42,7 @@ export default function Header(props) {
   return (
     <HideOnScroll {...props}>
       <AppBar position="fixed" color="transparent" elevation={0}>
-        <Toolbar disableGutters={true}>
+        <Toolbar disableGutters={true} variant="dense">
           <div ref={node}>
             <FocusLock disabled={!open}>
               <Burger open={open} setOpen={setOpen} aria-controls={menuId} />

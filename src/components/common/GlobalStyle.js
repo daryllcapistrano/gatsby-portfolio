@@ -3,8 +3,8 @@ import { createGlobalStyle } from "styled-components"
 export const GlobalStyle = createGlobalStyle` 
   html, body {
     font-family: "Rubik", sans-serif;
-    background-color: #2D2E40;
-    color: #f2c5bb;
+    background-color: #0C1618;
+    color: #DCE0D9;
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: scroll !important;
@@ -25,11 +25,11 @@ export const theme = {
 }
 
 /* Color Theme Swatches in Hex */
-// .Panorama-n°1-1-hex { color: #2D2E40; }
-// .Panorama-n°1-2-hex { color: #5B66A6; }
-// .Panorama-n°1-3-hex { color: #F27405; }
-// .Panorama-n°1-4-hex { color: #F25C05; }
-// .Panorama-n°1-5-hex { color: #F2C5BB; }
+// .Panorama-n°1-1-hex { color: #0B0B0A; }
+// .Panorama-n°1-2-hex { color: #0C1618; }
+// .Panorama-n°1-3-hex { color: #191E24; }
+// .Panorama-n°1-4-hex { color: #DCE0D9; }
+// .Panorama-n°1-5-hex { color: #B7FDFE; }
 
 /* Color Theme Swatches in RGBA */
 // .Panorama-n°1-1-rgba { color: rgba(45, 46, 63, 1); }

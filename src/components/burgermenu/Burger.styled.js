@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const StyledBurger = styled.button`
   position: absolute;
   top: 25%;
-  left: 2rem;
+  left: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -27,7 +27,7 @@ export const StyledBurger = styled.button`
     width: 2rem;
     height: 0.25rem;
     ${"" /* change color based on open or close */}
-    background: #f2c5bb;
+    background: #2D2E40;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

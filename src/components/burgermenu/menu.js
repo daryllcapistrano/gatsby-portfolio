@@ -10,16 +10,42 @@ const Menu = ({ open, setOpen, ...props }) => {
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
       <a href="#projects" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
         {/* <span aria-hidden="true">💁🏻‍♂️</span> */}
-        Featured Projects
+        Projects
       </a>
       <a href="#about" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
         {/* <span aria-hidden="true">💸</span> */}
-        Get to know me
+        About Me
       </a>
       <a href="#contact" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
         {/* <span aria-hidden="true">📩</span> */}
-        Get in touch
+        Contact
       </a>
+
+      <ul>
+        <li>
+          {" "}
+          <a
+            href="#projects"
+            tabIndex={tabIndex}
+            onClick={() => setOpen(!open)}
+          >
+            {/* <span aria-hidden="true">💁🏻‍♂️</span> */}
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#about" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
+            {/* <span aria-hidden="true">💸</span> */}
+            About Me
+          </a>
+        </li>
+        <li>
+          <a href="#contact" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
+            {/* <span aria-hidden="true">📩</span> */}
+            Contact
+          </a>
+        </li>
+      </ul>
     </StyledMenu>
   )
 }
