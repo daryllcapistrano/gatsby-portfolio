@@ -22,7 +22,7 @@ const AboutMe = () => {
         <span style={{ marginRight: `1em` }}>
           <BiStats />
         </span>
-        <span>About Me</span>
+        <span>A Bit About Me</span>
       </SectionHeader>
       <Grid container>
         <Grid item xs={12} sm={6}>

@@ -7,8 +7,8 @@ export const StyledBurger = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5em;
+  height: 1.5em;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -24,11 +24,11 @@ export const StyledBurger = styled.button`
   }
 
   span {
-    width: 2rem;
-    height: 0.25rem;
+    width: 1.5em;
+    height: 0.12rem;
     ${"" /* change color based on open or close */}
-    background: #2D2E40;
-    border-radius: 10px;
+    background: #DCE0D9;
+    opacity: 0.3;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
@@ -36,7 +36,7 @@ export const StyledBurger = styled.button`
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
     }
     :nth-child(2) {
-      opacity: ${({ open }) => (open ? "0" : "1")};
+      opacity: ${({ open }) => (open ? "0" : ".3")};
       transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
     }
     :nth-child(3) {

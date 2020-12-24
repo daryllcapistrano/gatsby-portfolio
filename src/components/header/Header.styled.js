@@ -3,20 +3,23 @@ import styled from "styled-components"
 export const HeaderWrapper = styled.div`
   width: 100%;
   text-align: right;
-  padding: 0 1.25em;
-  ${"" /* hide on tablet size and below */}
   @media only screen and (max-width: 599px) {
     display: none;
   }
-  ${"" /* below targets the navlinks */}
-  button {
-    color: #2d2e40;
+`
 
+export const LinkContainer = styled.div`
+  display: flex;
+  float: right;
+  width: 33%;
+  a {
+    color: #dce0d9;
+    text-decoration: none;
+    margin-right: 1em;
+    padding: 1em;
     &:hover {
-      color: #5b66a6;
-      ${"" /* border-left: 2px solid #5b66a6; */}
-      ${"" /* font-weight: bold; */}
-      ${"" /* transition: transform 0.3s ease-in-out; */}
+      opacity: 0.3;
+      border-bottom: 1px solid white;
     }
   }
 `

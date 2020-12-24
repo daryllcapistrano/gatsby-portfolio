@@ -25,7 +25,7 @@ export const theme = {
 }
 
 /* Color Theme Swatches in Hex */
-// .Panorama-n°1-1-hex { color: #0B0B0A; }
+// .Panorama-n°1-1-hex { color: #121212; }
 // .Panorama-n°1-2-hex { color: #0C1618; }
 // .Panorama-n°1-3-hex { color: #191E24; }
 // .Panorama-n°1-4-hex { color: #DCE0D9; }

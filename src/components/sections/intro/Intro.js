@@ -43,7 +43,9 @@ export default function Intro(props) {
         <DownChevron className="animate__animated animate__fadeInDown animate__delay-2s animate__repeat-2">
           <Link to="#about">
             <IconButton aria-label="scroll to introduction">
-              <IconContext.Provider value={{ color: `#191E24` }}>
+              <IconContext.Provider
+                value={{ color: "#DCE0D9", title: "next section" }}
+              >
                 <FaAngleDoubleDown />
               </IconContext.Provider>
             </IconButton>

@@ -28,7 +28,7 @@ const Contact = () => {
         <span style={{ marginRight: `1em` }}>
           <BiStats />
         </span>
-        <span>Contact Me</span>
+        <span>Get In Touch</span>
       </SectionHeader>
       <Grid container style={{ textAlign: `center` }}>
         <Grid item xs={12} sm={4}>

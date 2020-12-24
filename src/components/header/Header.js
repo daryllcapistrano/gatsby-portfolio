@@ -3,13 +3,12 @@ import { useOnClickOutside } from "../../hooks/useOnclickOutside"
 import FocusLock from "react-focus-lock"
 import Burger from "../burgermenu/Burger"
 import Menu from "../burgermenu/Menu"
-// import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
-import Button from "@material-ui/core/Button"
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import Slide from "@material-ui/core/Slide"
-import { HeaderWrapper } from "./Header.styled"
+import { HeaderWrapper, LinkContainer } from "./Header.styled"
 
 function HideOnScroll(props) {
   const { children } = props
@@ -45,25 +44,16 @@ export default function Header(props) {
         <Toolbar disableGutters={true} variant="dense">
           <div ref={node}>
             <FocusLock disabled={!open}>
-              <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
               <Menu open={open} setOpen={setOpen} id={menuId} />
+              <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
             </FocusLock>
           </div>
           <HeaderWrapper>
-            <div>
-              <a href="#about" style={{ textDecoration: `none` }}>
-                {/* <span aria-hidden="true">💸</span> */}
-                <Button>About me</Button>
-              </a>
-              <a href="#projects" style={{ textDecoration: `none` }}>
-                {/* <span aria-hidden="true">💁🏻‍♂️</span> */}
-                <Button>Featured Projects</Button>
-              </a>
-              <a href="#contact" style={{ textDecoration: `none` }}>
-                {/* <span aria-hidden="true">📩</span> */}
-                <Button>Get in touch</Button>
-              </a>
-            </div>
+            <LinkContainer>
+              <Link to="#projects">Works</Link>
+              <Link to="#about">About</Link>
+              <Link to="#contact">Contact</Link>
+            </LinkContainer>
           </HeaderWrapper>
         </Toolbar>
       </AppBar>

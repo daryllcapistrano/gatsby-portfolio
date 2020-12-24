@@ -18,7 +18,7 @@ const Projects = () => {
         <span style={{ marginRight: `1em` }}>
           <BiStats />
         </span>
-        <span>Featured Projects</span>
+        <span>What I've Been Working On</span>
       </SectionHeader>
       {/* <Grid container> */}
       {ProjectList.map((project, index, id) => (
