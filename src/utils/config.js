@@ -1,8 +1,8 @@
 module.exports = {
-  srConfig: (delay = 300, viewFactor = 0.1) => ({
+  srConfig: (delay = 500, viewFactor = 0.1) => ({
     origin: "bottom",
     distance: "30px",
-    duration: 400,
+    duration: 800,
     delay,
     rotate: { x: 0, y: 0, z: 0 },
     opacity: 0,

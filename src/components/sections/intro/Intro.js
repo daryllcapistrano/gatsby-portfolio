@@ -19,10 +19,10 @@ import "animate.css"
 
 function HideOnScroll(props) {
   const { children } = props
-  const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 75 })
+  const trigger = useScrollTrigger()
 
   return (
-    <Slide appear={false} in={!trigger} timeout={450}>
+    <Slide appear={false} in={!trigger} timeout={200}>
       {children}
     </Slide>
   )

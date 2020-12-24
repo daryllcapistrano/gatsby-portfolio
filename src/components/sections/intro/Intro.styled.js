@@ -5,11 +5,13 @@ export const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 90px);
+  ${"" /* height: calc(100vh - 90px); */}
+  height:100vh;
   word-wrap: break-word;
 `
 
 export const TextContainer = styled.div`
+  padding-bottom: 6em;
   width: 80%;
 `
 

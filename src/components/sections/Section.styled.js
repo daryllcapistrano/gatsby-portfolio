@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const SectionWrapper = styled.section`
-  margin: 0 0 6em 0;
-  padding: 0 1.5em;
+  ${"" /* margin: 0 0 6em 0;
+  padding: 0 1.5em; */}
 `
 
 export const SectionHeader = styled.div`

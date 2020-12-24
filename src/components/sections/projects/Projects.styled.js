@@ -10,11 +10,11 @@ export const SectionHeader = styled.h3`
   margin-bottom: 0;
 `
 
-export const ImageWrapper = styled.div`
-  padding: 1.25em;
-`
+// export const ImageWrapper = styled.div`
+//   padding: 1.25em;
+// `
 
-export const TextWrapper = styled.div`
-  text-align: justify;
-  line-height: 1.5em;
-`
+// export const TextWrapper = styled.div`
+//   text-align: justify;
+//   line-height: 1.5em;
+// `

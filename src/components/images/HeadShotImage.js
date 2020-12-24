@@ -29,13 +29,7 @@ const HeadShotImage = () => {
   return (
     <Img
       fluid={data.placeholderImage.childImageSharp.fluid}
-      alt="my headshot"
-      style={{
-        borderRadius: `50%`,
-        width: `250px`,
-        height: `250px`,
-        border: `2px solid #13070C`,
-      }}
+      alt="Headshot Image"
     />
   )
 }

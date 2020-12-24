@@ -2,12 +2,7 @@ import React from "react"
 import { StyledFooter } from "./Footer.styled"
 
 function Copyright() {
-  return (
-    <small style={{ opacity: `.2` }}>
-      {" "}
-      Copyright © {new Date().getFullYear()} Daryll Capistrano{" "}
-    </small>
-  )
+  return <p> Copyright © {new Date().getFullYear()} Daryll Capistrano </p>
 }
 
 export default function Footer() {
