@@ -4,41 +4,37 @@ import { Button } from "@material-ui/core"
 import Undraw from "../../../assets/svg/undraw_progressive_app_m9ms.svg"
 import {
   Container,
-  Content,
+  ContentWrapper,
   Title,
   Description,
   Action,
-  ImageContainer,
+  ImageWrapper,
 } from "./ProjectCard.styled"
 
 const ProjectCard = props => (
   <Container>
-    <ImageContainer className="ImageContainer">
+    <ImageWrapper>
       <Undraw />
-    </ImageContainer>
-    <Content className="Content">
+    </ImageWrapper>
+    <ContentWrapper>
       <Title>{props.title}</Title>
+      <div style={{ textAlign: `center`, margin: `.5em` }}>
+        tech / stack / goes / here
+      </div>
       <Description>{props.description}</Description>
-      <Action
-        className="Action"
-        href={props.detailLink}
-        rel="noreferer noopener"
-        target="_blank"
-      >
-        View On Github <span>&#8594;</span>
-      </Action>
-      <Button
-        href="/404"
-        color="primary"
-        variant="outlined"
-        style={{ width: `100%`, marginBottom: `2em` }}
-      >
-        view project
-      </Button>
-    </Content>
-    {/* <ImageContainer className="ImageContainer">
-      <Undraw />
-    </ImageContainer> */}
+      <div style={{ marginTop: `1.5em` }}>
+        <Action
+          href={props.githubLink}
+          rel="noreferer noopener"
+          target="_blank"
+        >
+          View On Github <span>&#8594;</span>
+        </Action>
+        {/* <Button href="/404" color="inherit" variant="outlined">
+          view project
+        </Button> */}
+      </div>
+    </ContentWrapper>
   </Container>
 )
 
@@ -48,5 +44,5 @@ ProjectCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   // stack: PropTypes.array.isRequired,
-  detailLink: PropTypes.string.isRequired,
+  githubLink: PropTypes.string.isRequired,
 }

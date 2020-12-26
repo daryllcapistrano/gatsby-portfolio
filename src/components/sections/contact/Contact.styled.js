@@ -1,29 +1,26 @@
 import styled from "styled-components"
-import { Button } from "@material-ui/core"
 
-// export const SectionWrapper = styled.section`
-//   padding: 1.5em;
-// `
+export const SectionWrapper = styled.section`
+  padding: 1.5em;
+
+  span {
+    color: #dce0d9;
+  }
+
+  ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 0.5em;
+    }
+  }
+`
 
 export const SectionHeader = styled.h3`
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 0;
-  span {
-    margin-right: 1em;
-  }
-`
-
-export const SocialButton = styled(Button)`
-  font-weight: 400;
-  font-size: 1.25em;
-  text-decoration: none;
-  color: black;
-  background-color: none;
-  margin: 1em;
-  }
-  &:hover {
-    color: inherit;
-    background-color: none;    
-  }
+  border-bottom: 2px solid #191e24;
 `

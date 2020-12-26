@@ -13,44 +13,43 @@ export const Container = styled.div`
     grid-template-columns: 1fr;
   }
 `
-export const Content = styled.div`
-  background: #202022;
-  padding-top:6em;
-  ${"" /* padding: 1em 1.5em; */}
-  position: relative;
-  }
-  @media (max-width: 768px) {
-    grid-row: 2;
-  }
-`
-export const Stack = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  margin: 1.5em 0;
-  width: 100%;
-  font-size: 1.25em;
-  color: inherit;
-`
-export const Title = styled.h2`
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-`
-export const Description = styled.div`
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.5em;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 2.5em;
-  @media (max-width: 768px) {
-    margin-bottom: 2.5em;
+
+export const ImageWrapper = styled.div`
+  background: #dce0d9;
+  padding: 1em;
+  border-bottom: 1px solid #121212;
+  border-radius: 1em 1em 0 0;
+
+  @media only screen and (min-width: 769px) {
+    border-bottom: 0;
+    border-right: 1px solid #121212;
+    border-radius: 1em 0 0 1em;
   }
 `
+
+export const ContentWrapper = styled.div`
+  background: #dce0d9;
+  color: #121212;
+  padding: 1em 2em;
+  border-radius: 0 0 1em 1em;
+  @media only screen and (min-width: 769px) {
+    border-radius: 0 1em 1em 0;
+  }
+`
+export const Title = styled.h3`
+  margin: 0;
+`
+
+export const Description = styled.p`
+  margin: 0;
+`
+
 export const Action = styled.a`
   font-weight: 400;
   font-size: 0.7em;
   text-decoration: none;
-  color: #ddf8e8;
+  color: #121212;
+  opacity: 0.2;
   transition: all 150ms ease-in-out;
   float: right;
   span {
@@ -68,7 +67,12 @@ export const Action = styled.a`
     }
   }
 `
-export const ImageContainer = styled.div`
-  background: white;
-  padding: 2em;
-`
+
+// export const Stack = styled.div`
+//   display: flex;
+//   justify-content: space-evenly;
+//   margin: 1.5em 0;
+//   width: 100%;
+//   font-size: 1.25em;
+//   color: inherit;
+// `

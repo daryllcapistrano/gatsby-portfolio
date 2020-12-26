@@ -16,6 +16,10 @@ export const GlobalStyle = createGlobalStyle`
     visibility: hidden;
   }
 
+  #projects, #about {
+    margin-bottom: 12em;
+  }
+
 `
 export const theme = {
   primaryDark: "yellow",
@@ -37,3 +41,7 @@ export const theme = {
 // .Panorama-n°1-3-rgba { color: rgba(242, 115, 4, 1); }
 // .Panorama-n°1-4-rgba { color: rgba(242, 91, 4, 1); }
 // .Panorama-n°1-5-rgba { color: rgba(242, 196, 186, 1); }
+
+//! media breakpoints, find and add all, then standardize
+// @media only screen and (min-width: 600px) {}
+// @media only screen and (min-width: 960px) {}
