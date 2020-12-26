@@ -33,5 +33,5 @@ export const Description = styled.p`
 
 export const DownChevron = styled.div`
   position: absolute;
-  top: 75vh;
+  top: 66vh;
 `
