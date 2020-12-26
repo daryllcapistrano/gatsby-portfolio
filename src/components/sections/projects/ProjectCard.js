@@ -1,11 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Button } from "@material-ui/core"
-// import Undraw from "../../../assets/svg/undraw_progressive_app_m9ms.svg"
+import Undraw from "../../../assets/svg/undraw_progressive_app_m9ms.svg"
 import {
   Container,
   Content,
-  // Stack,
   Title,
   Description,
   Action,
@@ -14,18 +13,12 @@ import {
 
 const ProjectCard = props => (
   <Container>
+    <ImageContainer className="ImageContainer">
+      <Undraw />
+    </ImageContainer>
     <Content className="Content">
       <Title>{props.title}</Title>
       <Description>{props.description}</Description>
-      {/* <Stack>{props.stack}</Stack> */}
-      <Button
-        href="/404"
-        color="primary"
-        variant="outlined"
-        style={{ width: `100%`, marginBottom: `2em` }}
-      >
-        view project
-      </Button>
       <Action
         className="Action"
         href={props.detailLink}
@@ -34,10 +27,18 @@ const ProjectCard = props => (
       >
         View On Github <span>&#8594;</span>
       </Action>
+      <Button
+        href="/404"
+        color="primary"
+        variant="outlined"
+        style={{ width: `100%`, marginBottom: `2em` }}
+      >
+        view project
+      </Button>
     </Content>
-    <ImageContainer className="ImageContainer">
-      {/* <Undraw /> */}
-    </ImageContainer>
+    {/* <ImageContainer className="ImageContainer">
+      <Undraw />
+    </ImageContainer> */}
   </Container>
 )
 

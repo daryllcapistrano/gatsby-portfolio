@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
 `
 
 export const TextContainer = styled.div`
-  padding-bottom: 6em;
+  padding-bottom: 10em;
   width: 80%;
 `
 
@@ -27,11 +27,11 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   font-weight: 200;
-  margin-top: 0.33em;
+  margin-top: 0.25em;
   margin-bottom: 0;
 `
 
 export const DownChevron = styled.div`
   position: absolute;
-  top: calc(100vh - 100px);
+  top: 75vh;
 `

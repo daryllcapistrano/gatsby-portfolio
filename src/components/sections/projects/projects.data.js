@@ -18,7 +18,7 @@ export const ProjectList = [
     detailLink: "https://github.com/daryllcapistrano/skatespot-client",
   },
   {
-    title: "Photography and Video Portfolio",
+    title: "Media Portfolio",
     // stack: [
     //   <FaReact />,
     //   <GrGatsbyjs />,

@@ -14,7 +14,7 @@ import { GoMarkGithub } from "react-icons/go"
 //   SectionTitle,
 // } from "../Section.styled"
 
-import { SocialButton, SectionWrapper, SectionHeader } from "./Contact.styled"
+import { SocialButton, SectionHeader } from "./Contact.styled"
 
 import { BiStats } from "react-icons/bi"
 
@@ -23,9 +23,9 @@ const Contact = () => {
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
 
   return (
-    <SectionWrapper id="contact" className="load-hidden" ref={revealContainer}>
+    <section id="contact" className="load-hidden" ref={revealContainer}>
       <SectionHeader>
-        <span style={{ marginRight: `1em` }}>
+        <span>
           <BiStats />
         </span>
         <span>Get In Touch</span>
@@ -64,7 +64,7 @@ const Contact = () => {
         </Grid>
       </Grid>
       {/* </Container> */}
-    </SectionWrapper>
+    </section>
   )
 }
 

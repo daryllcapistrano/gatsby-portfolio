@@ -1,13 +1,13 @@
 import React, { useState, useRef } from "react"
+import { Link } from "gatsby"
 import { useOnClickOutside } from "../../hooks/useOnclickOutside"
 import FocusLock from "react-focus-lock"
-import Burger from "../burgermenu/Burger"
 import Menu from "../burgermenu/Menu"
-import { Link } from "gatsby"
+import Burger from "../burgermenu/Burger"
+import Slide from "@material-ui/core/Slide"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
-import Slide from "@material-ui/core/Slide"
 import { HeaderWrapper, LinkContainer } from "./Header.styled"
 
 function HideOnScroll(props) {
@@ -15,7 +15,7 @@ function HideOnScroll(props) {
   const trigger = useScrollTrigger()
 
   return (
-    <Slide appear={false} direction="down" in={!trigger} timeout={450}>
+    <Slide appear={false} direction="down" in={!trigger} timeout={600}>
       {children}
     </Slide>
   )
@@ -40,14 +40,12 @@ export default function Header(props) {
 
   return (
     <HideOnScroll {...props}>
-      <AppBar position="fixed" color="transparent" elevation={0}>
+      <AppBar
+        position="fixed"
+        style={{ backgroundColor: `#0C1618` }}
+        elevation={0}
+      >
         <Toolbar disableGutters={true} variant="dense">
-          <div ref={node}>
-            <FocusLock disabled={!open}>
-              <Menu open={open} setOpen={setOpen} id={menuId} />
-              <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-            </FocusLock>
-          </div>
           <HeaderWrapper>
             <LinkContainer>
               <Link to="#projects">Works</Link>
@@ -56,6 +54,12 @@ export default function Header(props) {
             </LinkContainer>
           </HeaderWrapper>
         </Toolbar>
+        <div ref={node}>
+          <FocusLock disabled={!open}>
+            <Menu open={open} setOpen={setOpen} id={menuId} />
+            <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+          </FocusLock>
+        </div>
       </AppBar>
     </HideOnScroll>
   )

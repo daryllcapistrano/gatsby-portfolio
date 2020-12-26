@@ -3,59 +3,24 @@ import styled from "styled-components"
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 4fr 7fr;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11);
-  margin: 1em 2em;
-  transition: all 150ms ease-in-out;
+  margin: 1em 0;
   text-decoration: none;
-  color: #eff9f0;
+  color: #dce0d9;
   @media (max-width: 950px) {
     grid-template-columns: 4.5fr 7fr;
   }
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-  @media (max-width: 600px) {
-    margin: 1em 0;
-  }
-  &:hover {
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-      0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
-      0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
-    transition: all 150ms ease-in-out;
-    .Content::before {
-      ${"" /* opacity: 0.05; */}
-      transition: all 150ms ease-in-out;
-    }
-    .ImageContainer::before {
-      ${"" /* opacity: 0.05; */}
-      transition: all 150ms ease-in-out;
-    }
-  }
 `
 export const Content = styled.div`
-  background: #13070c;
-  padding: 1em 1.5em;
+  background: #202022;
+  padding-top:6em;
+  ${"" /* padding: 1em 1.5em; */}
   position: relative;
-  ${"" /* border-radius: 5px 0 0 5px; */}
-  &:before {
-    ${"" /* position: absolute; */}
-    content: "";
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #5f7de7;
-    mix-blend-mode: multiply;
-    opacity: 0;
-    transition: all 150ms ease-in-out;
-  }
-  @media (max-width: 950px) {
-    padding: 0.75em 1.5em;
   }
   @media (max-width: 768px) {
     grid-row: 2;
-    ${"" /* border-radius: 0 0 5px 5px; */}
   }
 `
 export const Stack = styled.div`
@@ -95,7 +60,6 @@ export const Action = styled.a`
     transition: transform 400ms ease-in-out;
   }
   &:hover {
-    color: yellow;
     transition: all 150ms ease-in-out;
     span {
       transform: translateX(0px);
@@ -105,45 +69,6 @@ export const Action = styled.a`
   }
 `
 export const ImageContainer = styled.div`
-  background: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  overflow: hidden;
-  position: relative;
-  padding-left: 2em;
-  padding-right: 2em;
-  border: 1px solid #13070C;
-  ${"" /* border-radius: 0 5px 5px 0; */}
-  @media (max-width: 768px) {
-    padding: 2em;
-    max-height: auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    ${"" /* border-radius: 5px 5px 0 0; */}
-  }
-  &:before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: auto;
-    left: 0;
-    top: 0;
-    background: black;
-    mix-blend-mode: multiply;
-    opacity: 0;
-    transition: all 150ms ease-in-out;
-  }
-  img {
-    width: 100%;
-    height: auto;
-    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
-    ${"" /* border-radius: 0 5px 5px 0; */}
-    @media (max-width: 760px) {
-      max-width: 300px;
-      width: 100%;
-      height: auto:
-    }
-  }
+  background: white;
+  padding: 2em;
 `

@@ -4,7 +4,7 @@ import sr from "../../../utils/sr"
 import { Grid } from "@material-ui/core"
 import ProjectCard from "./ProjectCard"
 import { ProjectList } from "./Projects.data"
-import { SectionWrapper, SectionHeader } from "./Projects.styled"
+import { SectionHeader } from "./Projects.styled"
 
 import { BiStats } from "react-icons/bi"
 
@@ -13,27 +13,26 @@ const Projects = () => {
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
 
   return (
-    <SectionWrapper id="projects" className="load-hidden" ref={revealContainer}>
+    <section id="projects" className="load-hidden" ref={revealContainer}>
       <SectionHeader>
-        <span style={{ marginRight: `1em` }}>
+        <span>
           <BiStats />
         </span>
         <span>What I've Been Working On</span>
       </SectionHeader>
-      {/* <Grid container> */}
-      {ProjectList.map((project, index, id) => (
-        <Grid item xs={12} key={index}>
-          <ProjectCard
-            // stack={project.stack}
-            title={project.title}
-            description={project.description}
-            detailLink={project.detailLink}
-          />
-        </Grid>
-      ))}
-      {/* </Grid> */}
-      {/* </Container> */}
-    </SectionWrapper>
+      <Grid container>
+        {ProjectList.map((project, index, id) => (
+          <Grid item xs={12} key={index}>
+            <ProjectCard
+              id={id}
+              title={project.title}
+              description={project.description}
+              detailLink={project.detailLink}
+            />
+          </Grid>
+        ))}
+      </Grid>
+    </section>
   )
 }
 

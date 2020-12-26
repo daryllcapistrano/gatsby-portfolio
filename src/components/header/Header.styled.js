@@ -11,7 +11,6 @@ export const HeaderWrapper = styled.div`
 export const LinkContainer = styled.div`
   display: flex;
   float: right;
-  width: 33%;
   a {
     color: #dce0d9;
     text-decoration: none;

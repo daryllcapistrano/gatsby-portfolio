@@ -6,7 +6,7 @@ import { Grid } from "@material-ui/core/"
 import {
   ImageWrapper,
   TextWrapper,
-  SectionWrapper,
+  // SectionWrapper,
   SectionHeader,
 } from "./About.styled"
 
@@ -17,12 +17,12 @@ const AboutMe = () => {
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
 
   return (
-    <SectionWrapper id="about" className="load-hidden" ref={revealContainer}>
+    <section id="about" className="load-hidden" ref={revealContainer}>
       <SectionHeader>
-        <span style={{ marginRight: `1em` }}>
+        <span>
           <BiStats />
         </span>
-        <span>A Bit About Me</span>
+        <span>About Me</span>
       </SectionHeader>
       <Grid container>
         <Grid item xs={12} sm={6}>
@@ -59,7 +59,7 @@ const AboutMe = () => {
           </TextWrapper>
         </Grid>
       </Grid>
-    </SectionWrapper>
+    </section>
   )
 }
 
