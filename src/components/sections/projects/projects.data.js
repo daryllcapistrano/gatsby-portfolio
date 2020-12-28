@@ -18,4 +18,22 @@ export const ProjectList = [
       "S.K.A.T.E. game score tracker using React hooks to extract stateful logic from components",
     githubLink: "https://github.com/daryllcapistrano/Game-of-SKATE",
   },
+  {
+    title: "Game of S.K.A.T.E.",
+    description:
+      "S.K.A.T.E. game score tracker using React hooks to extract stateful logic from components",
+    githubLink: "https://github.com/daryllcapistrano/Game-of-SKATE",
+  },
+  {
+    title: "Game of S.K.A.T.E.",
+    description:
+      "S.K.A.T.E. game score tracker using React hooks to extract stateful logic from components",
+    githubLink: "https://github.com/daryllcapistrano/Game-of-SKATE",
+  },
+  {
+    title: "Game of S.K.A.T.E.",
+    description:
+      "S.K.A.T.E. game score tracker using React hooks to extract stateful logic from components",
+    githubLink: "https://github.com/daryllcapistrano/Game-of-SKATE",
+  },
 ]

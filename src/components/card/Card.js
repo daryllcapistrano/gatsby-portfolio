@@ -1,23 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
-// import { Button } from "@material-ui/core"
-import Undraw from "../../../assets/svg/undraw_progressive_app_m9ms.svg"
 import {
   Container,
   ContentWrapper,
   Title,
   Description,
   Action,
-  ImageWrapper,
-} from "./ProjectCard.styled"
+  TitleWrapper,
+} from "./Card.styled"
 
-const ProjectCard = props => (
+const Card = props => (
   <Container>
-    <ImageWrapper>
-      <Undraw />
-    </ImageWrapper>
-    <ContentWrapper>
+    <TitleWrapper>
       <Title>{props.title}</Title>
+    </TitleWrapper>
+    <ContentWrapper>
       <div
         style={{
           marginBottom: `.8em`,
@@ -40,9 +37,9 @@ const ProjectCard = props => (
   </Container>
 )
 
-export default ProjectCard
+export default Card
 
-ProjectCard.propTypes = {
+Card.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   // stack: PropTypes.array.isRequired,

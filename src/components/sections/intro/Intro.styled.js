@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
   align-items: center;
   width: 100%;
   ${"" /* height: calc(100vh - 90px); */}
-  height:100vh;
+  height: 95vh;
   word-wrap: break-word;
 `
 

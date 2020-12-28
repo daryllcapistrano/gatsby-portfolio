@@ -1,24 +1,23 @@
 import styled from "styled-components"
 
-export const StyledBurger = styled.button`
+export const BurgerButton = styled.button`
   position: absolute;
-  top: 25%;
-  left: 1em;
+  z-index: 10;
   display: flex;
+  background: transparent;
   flex-direction: column;
   justify-content: space-around;
+  cursor: pointer;
+  top: 25%;
+  left: 1em;
   width: 1.5em;
   height: 1.5em;
-  background: transparent;
   border: none;
-  cursor: pointer;
   padding: 0;
-  z-index: 10;
   &:focus {
     outline: none;
   }
 
-  ${"" /* hide on tablet size and above */}
   @media only screen and (min-width: 600px) {
     display: none;
   }
@@ -26,8 +25,7 @@ export const StyledBurger = styled.button`
   span {
     width: 1.5em;
     height: 0.12rem;
-    ${"" /* change color based on open or close */}
-    background: #DCE0D9;
+    background: #dce0d9;
     opacity: 0.3;
     transition: all 0.3s linear;
     position: relative;

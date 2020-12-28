@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from "react"
 import { srConfig } from "../../../utils/config"
 import sr from "../../../utils/sr"
 import { Grid } from "@material-ui/core"
-import ProjectCard from "./ProjectCard"
+// import ProjectCard from "./ProjectCard"
+import Card from "../../card/Card"
 import { ProjectList } from "./Projects.data"
 import { SectionWrapper, SectionHeader } from "./Projects.styled"
 
@@ -21,10 +22,10 @@ const Projects = () => {
           </span>
           <span>What I've Been Working On</span>
         </SectionHeader>
-        <Grid container>
+        <Grid container spacing={1}>
           {ProjectList.map((project, index, id) => (
-            <Grid item xs={12} key={index}>
-              <ProjectCard
+            <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+              <Card
                 id={id}
                 title={project.title}
                 description={project.description}

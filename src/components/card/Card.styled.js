@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 `
 
-export const ImageWrapper = styled.div`
+export const TitleWrapper = styled.div`
   background: #191e24;
   padding: 1em;
   border-bottom: 1px solid #121212;
@@ -37,8 +37,9 @@ export const ContentWrapper = styled.div`
   }
 `
 export const Title = styled.h3`
-  margin: 0 0 0.5rem 0;
-  text-decoration: underline;
+  margin: 0;
+  ${"" /* text-decoration: underline; */}
+  color: white;
 `
 
 export const Description = styled.p`

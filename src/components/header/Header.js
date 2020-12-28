@@ -2,8 +2,9 @@ import React, { useState, useRef } from "react"
 import { Link } from "gatsby"
 import { useOnClickOutside } from "../../hooks/useOnclickOutside"
 import FocusLock from "react-focus-lock"
-import Menu from "../burgermenu/Menu"
-import Burger from "../burgermenu/Burger"
+// import Menu from "../burgermenu/Menu"
+// import Burger from "../burgermenu/Burger"
+import { Button, Menu } from "../mobileMenu"
 import Slide from "@material-ui/core/Slide"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
@@ -57,7 +58,7 @@ export default function Header(props) {
         <div ref={node}>
           <FocusLock disabled={!open}>
             <Menu open={open} setOpen={setOpen} id={menuId} />
-            <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+            <Button open={open} setOpen={setOpen} aria-controls={menuId} />
           </FocusLock>
         </div>
       </AppBar>
