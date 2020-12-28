@@ -7,7 +7,7 @@ export const SectionWrapper = styled.section`
 export const SectionHeader = styled.h3`
   display: flex;
   justify-content: flex-start;
-  border-bottom: 1px solid #dce0d9;
+  border-bottom: 2px solid #191e24;
   span {
     margin-right: 1em;
   }

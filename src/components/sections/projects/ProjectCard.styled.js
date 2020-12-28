@@ -5,7 +5,7 @@ export const Container = styled.div`
   grid-template-columns: 4fr 7fr;
   margin: 1em 0;
   text-decoration: none;
-  color: #dce0d9;
+  color: #191e24;
   @media (max-width: 950px) {
     grid-template-columns: 4.5fr 7fr;
   }
@@ -15,7 +15,7 @@ export const Container = styled.div`
 `
 
 export const ImageWrapper = styled.div`
-  background: #dce0d9;
+  background: #191e24;
   padding: 1em;
   border-bottom: 1px solid #121212;
   border-radius: 1em 1em 0 0;
@@ -28,30 +28,31 @@ export const ImageWrapper = styled.div`
 `
 
 export const ContentWrapper = styled.div`
-  background: #dce0d9;
-  color: #121212;
-  padding: 1em 2em;
+  background: #191e24;
+  color: #dce0d9;
+  padding: 1em;
   border-radius: 0 0 1em 1em;
   @media only screen and (min-width: 769px) {
     border-radius: 0 1em 1em 0;
   }
 `
 export const Title = styled.h3`
-  margin: 0;
+  margin: 0 0 0.5rem 0;
+  text-decoration: underline;
 `
 
 export const Description = styled.p`
-  margin: 0;
+  margin: 0 0 1em 0;
 `
 
 export const Action = styled.a`
   font-weight: 400;
   font-size: 0.7em;
   text-decoration: none;
-  color: #121212;
+  color: #dce0d9;
   opacity: 0.2;
   transition: all 150ms ease-in-out;
-  float: right;
+  ${"" /* float: right; */}
   span {
     margin-left: 1.25em;
     transform: translateX(-8px);

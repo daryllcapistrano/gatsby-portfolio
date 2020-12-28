@@ -42,7 +42,7 @@ export default function Header(props) {
     <HideOnScroll {...props}>
       <AppBar
         position="fixed"
-        style={{ backgroundColor: `#0C1618` }}
+        style={{ backgroundColor: `#191e24` }}
         elevation={0}
       >
         <Toolbar disableGutters={true} variant="dense">

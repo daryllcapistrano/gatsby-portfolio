@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Button } from "@material-ui/core"
+// import { Button } from "@material-ui/core"
 import Undraw from "../../../assets/svg/undraw_progressive_app_m9ms.svg"
 import {
   Container,
@@ -18,22 +18,24 @@ const ProjectCard = props => (
     </ImageWrapper>
     <ContentWrapper>
       <Title>{props.title}</Title>
-      <div style={{ textAlign: `center`, margin: `.5em` }}>
-        tech / stack / goes / here
+      <div
+        style={{
+          marginBottom: `.8em`,
+          opacity: `.2`,
+          fontSize: `80%`,
+          fontFamily: `monospace`,
+        }}
+      >
+        javascript / nodeJS / gatsbyJS / mongoDB
       </div>
       <Description>{props.description}</Description>
-      <div style={{ marginTop: `1.5em` }}>
-        <Action
-          href={props.githubLink}
-          rel="noreferer noopener"
-          target="_blank"
-        >
-          View On Github <span>&#8594;</span>
-        </Action>
-        {/* <Button href="/404" color="inherit" variant="outlined">
+
+      <Action href={props.githubLink} rel="noreferer noopener" target="_blank">
+        View On Github <span>&#8594;</span>
+      </Action>
+      {/* <Button href="/404" color="inherit" variant="outlined">
           view project
         </Button> */}
-      </div>
     </ContentWrapper>
   </Container>
 )

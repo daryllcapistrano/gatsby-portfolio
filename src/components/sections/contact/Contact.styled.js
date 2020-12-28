@@ -3,10 +3,6 @@ import styled from "styled-components"
 export const SectionWrapper = styled.section`
   padding: 1.5em;
 
-  span {
-    color: #dce0d9;
-  }
-
   ul {
     text-align: center;
     padding: 0;
@@ -15,6 +11,16 @@ export const SectionWrapper = styled.section`
     li {
       display: inline-block;
       margin: 0 0.5em;
+
+      a {
+        font-size: 80%;
+        text-decoration: none;
+        color: inherit;
+        padding-bottom: 0.25em;
+        &:hover {
+          border-bottom: 2px solid #191e24;
+        }
+      }
     }
   }
 `
