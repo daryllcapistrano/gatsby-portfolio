@@ -24,9 +24,8 @@ export const BurgerButton = styled.button`
 
   span {
     width: 1.5em;
-    height: 0.12rem;
+    height: 0.12em;
     background: #dce0d9;
-    opacity: 0.3;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
@@ -34,7 +33,7 @@ export const BurgerButton = styled.button`
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
     }
     :nth-child(2) {
-      opacity: ${({ open }) => (open ? "0" : ".3")};
+      opacity: ${({ open }) => (open ? "0" : "1")};
       transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
     }
     :nth-child(3) {

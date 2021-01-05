@@ -2,36 +2,47 @@ import styled from "styled-components"
 
 export const Wrapper = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   ${"" /* height: calc(100vh - 90px); */}
-  height: 95vh;
+  height: 100vh;
   word-wrap: break-word;
 `
 
 export const TextContainer = styled.div`
-  padding-bottom: 10em;
-  width: 80%;
+  width: 90%;
+  @media only screen and (min-width: 600px) {
+    width: 50%;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 25%;
+  }
+`
+
+export const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `
 
 export const Name = styled.h1`
-  font-size: 3em;
-  margin-bottom: 0;
+  font-family: "Corben", cursive;
+  font-size: 2.75em;
+  line-height: 1;
 `
+
 export const Title = styled.h2`
-  font-weight: 300;
-  letter-spacing: 2px;
+  text-align: center;
   margin-bottom: 0;
 `
 
 export const Description = styled.p`
-  font-weight: 200;
-  margin-top: 0.25em;
-  margin-bottom: 0;
+  text-align: center;
+  margin: 0;
 `
 
 export const DownChevron = styled.div`
   position: absolute;
-  top: 66vh;
+  bottom: 0;
 `

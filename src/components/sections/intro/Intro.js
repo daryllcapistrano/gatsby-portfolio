@@ -7,6 +7,8 @@ import Slide from "@material-ui/core/Slide"
 import IconButton from "@material-ui/core/IconButton"
 import { srConfigIntro } from "../../../utils/config"
 import sr from "../../../utils/sr"
+import "animate.css"
+import Avatar from "../../../assets/svg/avataaars-me.svg"
 import {
   Wrapper,
   TextContainer,
@@ -14,8 +16,8 @@ import {
   Title,
   Description,
   DownChevron,
+  ImageWrapper,
 } from "./Intro.styled"
-import "animate.css"
 
 function HideOnScroll(props) {
   const { children } = props
@@ -35,7 +37,10 @@ export default function Intro(props) {
   return (
     <Wrapper id="intro">
       <TextContainer className="load-hidden" ref={revealContainer}>
-        <Name> Daryll Capistrano</Name>
+        <ImageWrapper>
+          <Avatar />
+        </ImageWrapper>
+        <Name> Daryll &nbsp;&nbsp;Capistrano</Name>
         <Title>Web Developer</Title>
         <Description>Based in Las Vegas</Description>
       </TextContainer>
@@ -44,7 +49,7 @@ export default function Intro(props) {
           <Link to="#about">
             <IconButton aria-label="scroll to introduction">
               <IconContext.Provider
-                value={{ color: "#DCE0D9", title: "next section" }}
+                value={{ color: "black", title: "next section" }}
               >
                 <FaAngleDoubleDown />
               </IconContext.Provider>

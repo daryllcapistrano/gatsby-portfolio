@@ -12,14 +12,15 @@ const Layout = ({ children }) => {
     // <ThemeProvider theme={theme}>
     <>
       <Helmet>
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link
-          href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500&family=Corben:wght@700&display=swap"
           rel="stylesheet"
         ></link>
-        {/* <script src="https://unpkg.com/scrollreveal"></script> */}
       </Helmet>
       <GlobalStyle />
-      <Header />
+      {/* not enough sections to require nav */}
+      {/* <Header /> */}
       <main>{children}</main>
       <Footer />
     </>
