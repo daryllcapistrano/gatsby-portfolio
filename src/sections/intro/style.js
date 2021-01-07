@@ -50,14 +50,16 @@ export const Name = styled.h1`
   font-size: 2.2em;
 `
 
-export const Title = styled.p`
+export const Title = styled.h2`
   text-align: center;
   margin-bottom: 0;
+  font-weight: 500;
   /* padding-left: 1.5em; */
 `
 
 export const Description = styled.p`
   text-align: center;
   margin: 0;
+  font-weight: 500;
   /* padding-left: 1.5em; */
 `

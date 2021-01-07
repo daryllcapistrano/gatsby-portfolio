@@ -4,7 +4,6 @@ import Card from "../../components/card"
 import { ProjectList } from "./data"
 import sr from "../../utils/scrollReveal/sr"
 import { scrollRevealConfig } from "../../utils/scrollReveal/config"
-import { BiStats } from "react-icons/bi"
 import { SectionWrapper, SectionHeader } from "./style"
 
 const Projects = () => {

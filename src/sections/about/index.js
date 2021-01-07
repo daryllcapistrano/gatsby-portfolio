@@ -7,8 +7,6 @@ import {
   SectionHeader,
 } from "./style"
 
-import { FaRegDotCircle } from "react-icons/fa"
-
 const AboutMe = () => {
   return (
     <section id="about">
