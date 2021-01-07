@@ -2,8 +2,7 @@ import styled from "styled-components"
 
 export const HeaderWrapper = styled.div`
   width: 100%;
-  text-align: right;
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 640px) {
     display: none;
   }
 `
@@ -11,7 +10,8 @@ export const HeaderWrapper = styled.div`
 export const LinkContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin-right: 2em;
+  width: 100%;
+  margin-right: 1em;
   a {
     color: #0f0a01;
     text-decoration: none;

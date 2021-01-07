@@ -7,7 +7,7 @@ export const SectionWrapper = styled.section`
 export const SectionHeader = styled.h3`
   display: flex;
   justify-content: flex-start;
-  border-bottom: 2px solid #191e24;
+  border-bottom: 1px solid #191e24;
 `
 
 export const SocialButtons = styled.div`

@@ -10,13 +10,13 @@ import {
   ImageWrapper,
 } from "./style"
 
-export default function Intro(props) {
+const Intro = () => {
   return (
     <Wrapper id="intro">
       <TextContainer>
         <Name> Daryll &nbsp;&nbsp;Capistrano</Name>
         <Title>Web Developer</Title>
-        <Description>Based in Las Vegas</Description>
+        <Description>in Las Vegas</Description>
       </TextContainer>
       <Action />
       <ImageWrapper>
@@ -25,3 +25,5 @@ export default function Intro(props) {
     </Wrapper>
   )
 }
+
+export default Intro

@@ -15,14 +15,11 @@ const Projects = () => {
     <section id="projects">
       <SectionWrapper>
         <SectionHeader>
-          <span>
-            <BiStats />
-          </span>
-          <span>works</span>
+          <h3>works</h3>
         </SectionHeader>
         <Grid container spacing={1} ref={revealContainer}>
           {ProjectList.map((project, index, id) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
+            <Grid item xs={12} sm={6} md={6} lg={12} key={index}>
               <Card
                 id={id}
                 title={project.title}

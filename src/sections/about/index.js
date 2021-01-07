@@ -14,10 +14,7 @@ const AboutMe = () => {
     <section id="about">
       <SectionWrapper>
         <SectionHeader>
-          <span>
-            <FaRegDotCircle />
-          </span>
-          <span>About Me</span>
+          <h3>About Me</h3>
         </SectionHeader>
         <TextWrapper>
           <p>
@@ -28,10 +25,10 @@ const AboutMe = () => {
             thoughtfully designed and built with performance and best practices
             in mind.
           </p>
+          <ImageWrapper>
+            <HeadShotImage />
+          </ImageWrapper>
           <p>
-            <ImageWrapper>
-              <HeadShotImage />
-            </ImageWrapper>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
             eum accusantium totam sint a expedita temporibus repudiandae
             praesentium, repellat perferendis officia optio voluptatibus nam
