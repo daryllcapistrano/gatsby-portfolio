@@ -10,13 +10,12 @@ export const MobileMenu = styled.nav`
   left: 0;
   word-break: break-word;
   transition: transform 0.3s ease-in-out;
-  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-120%)")};
+  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(120%)")};
 `
 
 export const MobileLinkWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 10em;
   border-top: 2px solid #121212;
   div {
     padding: 1em 3.5em;

@@ -14,6 +14,7 @@ export const BurgerButton = styled.button`
   height: 1.5em;
   border: none;
   padding: 0;
+  /* find more a11y compliant way for below */
   &:focus {
     outline: none;
   }
@@ -23,9 +24,9 @@ export const BurgerButton = styled.button`
   }
 
   span {
+    background: #0f0a01;
     width: 1.5em;
     height: 0.12em;
-    background: #dce0d9;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;

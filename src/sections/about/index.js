@@ -1,27 +1,21 @@
-import React, { useEffect, useRef } from "react"
-import { srConfig } from "../../../utils/config"
-import sr from "../../../utils/sr"
-import HeadShotImage from "../../images/HeadShotImage"
-// import { Grid } from "@material-ui/core/"
+import React from "react"
+import HeadShotImage from "../../components/images/HeadShotImage"
 import {
   ImageWrapper,
   TextWrapper,
   SectionWrapper,
   SectionHeader,
-} from "./About.styled"
+} from "./style"
 
-import { BiStats } from "react-icons/bi"
+import { FaRegDotCircle } from "react-icons/fa"
 
 const AboutMe = () => {
-  const revealContainer = useRef(null)
-  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
-
   return (
-    <section id="about" className="load-hidden" ref={revealContainer}>
+    <section id="about">
       <SectionWrapper>
         <SectionHeader>
           <span>
-            <BiStats />
+            <FaRegDotCircle />
           </span>
           <span>About Me</span>
         </SectionHeader>

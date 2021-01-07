@@ -41,13 +41,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Daryll Capistrano Portfolio`,
+        short_name: `dcapistrano.dev`,
         start_url: `/`,
         background_color: `#0C1A2E`,
         theme_color: `#0C1A2E`,
         display: `minimal-ui`,
-        icon: `src/assets/png/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/png/avataaars.png`, // This path is relative to the root of the site.
       },
     },
 

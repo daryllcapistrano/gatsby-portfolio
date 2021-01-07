@@ -1,7 +1,7 @@
 import React from "react"
-import { bool, func } from "prop-types"
-import { MobileMenu, MobileLinkWrapper } from "./Menu.styled"
 import { Link } from "gatsby"
+import { bool, func } from "prop-types"
+import { MobileMenu, MobileLinkWrapper } from "./style"
 
 const Menu = ({ open, setOpen, ...props }) => {
   const isHidden = open ? true : false

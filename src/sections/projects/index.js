@@ -1,28 +1,26 @@
 import React, { useEffect, useRef } from "react"
-import { srConfig } from "../../../utils/config"
-import sr from "../../../utils/sr"
 import { Grid } from "@material-ui/core"
-// import ProjectCard from "./ProjectCard"
-import Card from "../../card/Card"
-import { ProjectList } from "./Projects.data"
-import { SectionWrapper, SectionHeader } from "./Projects.styled"
-
+import Card from "../../components/card"
+import { ProjectList } from "./data"
+import sr from "../../utils/scrollReveal/sr"
+import { scrollRevealConfig } from "../../utils/scrollReveal/config"
 import { BiStats } from "react-icons/bi"
+import { SectionWrapper, SectionHeader } from "./style"
 
 const Projects = () => {
   const revealContainer = useRef(null)
-  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
+  useEffect(() => sr.reveal(revealContainer.current, scrollRevealConfig()), [])
 
   return (
-    <section id="projects" className="load-hidden" ref={revealContainer}>
+    <section id="projects">
       <SectionWrapper>
         <SectionHeader>
           <span>
             <BiStats />
           </span>
-          <span>What I've Been Working On</span>
+          <span>works</span>
         </SectionHeader>
-        <Grid container spacing={1}>
+        <Grid container spacing={1} ref={revealContainer}>
           {ProjectList.map((project, index, id) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Card

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import { bool, func } from "prop-types"
-import { BurgerButton } from "./Burger.styled"
+import { BurgerButton } from "./style"
 
 const Button = ({ open, setOpen, ...props }) => {
   const isExpanded = open ? true : false

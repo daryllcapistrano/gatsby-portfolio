@@ -13,7 +13,7 @@ import {
   Description,
   Action,
   TitleWrapper,
-} from "./Card.styled"
+} from "./style"
 
 export default function Card(props) {
   const [expanded, setExpanded] = React.useState(false)
@@ -29,6 +29,7 @@ export default function Card(props) {
           onClick={handleExpandClick}
           size="medium"
           style={{ padding: `0`, color: `#dce0d9` }}
+          aria-label="show project screenshot"
         >
           <MdExpandMore />
         </IconButton>

@@ -12,15 +12,14 @@ const Layout = ({ children }) => {
     // <ThemeProvider theme={theme}>
     <>
       <Helmet>
-        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        {/* <link rel="preconnect" href="https://fonts.gstatic.com"></link> */}
         <link
           href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500&family=Corben:wght@700&display=swap"
           rel="stylesheet"
         ></link>
       </Helmet>
       <GlobalStyle />
-      {/* not enough sections to require nav */}
-      {/* <Header /> */}
+      <Header />
       <main>{children}</main>
       <Footer />
     </>

@@ -10,15 +10,15 @@ export const HeaderWrapper = styled.div`
 
 export const LinkContainer = styled.div`
   display: flex;
-  float: right;
+  justify-content: flex-end;
+  margin-right: 2em;
   a {
-    color: #dce0d9;
+    color: #0f0a01;
     text-decoration: none;
     margin-right: 1em;
-    padding: 1em;
     &:hover {
       opacity: 0.3;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid black;
     }
   }
 `
