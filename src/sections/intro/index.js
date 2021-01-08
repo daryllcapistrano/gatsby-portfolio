@@ -6,7 +6,7 @@ import {
   TextContainer,
   Name,
   Title,
-  Description,
+  // Description,
   ImageWrapper,
 } from "./style"
 
@@ -16,7 +16,7 @@ const Intro = () => {
       <TextContainer>
         <Name> Daryll &nbsp;&nbsp;Capistrano</Name>
         <Title>Web Developer</Title>
-        <Description>in Las Vegas</Description>
+        {/* <Description>in Las Vegas</Description> */}
       </TextContainer>
       <Action />
       <ImageWrapper>

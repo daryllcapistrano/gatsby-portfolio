@@ -13,6 +13,7 @@ import {
   Description,
   Action,
   TitleWrapper,
+  TechList,
 } from "./style"
 
 export default function Card(props) {
@@ -28,30 +29,19 @@ export default function Card(props) {
         <IconButton
           onClick={handleExpandClick}
           size="medium"
-          style={{ padding: `0`, color: `#dce0d9` }}
           aria-label="show project screenshot"
+          color="primary"
         >
           <MdExpandMore />
         </IconButton>
       </TitleWrapper>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <div
-          style={{ height: `auto`, padding: `1em`, backgroundColor: `#ffffff` }}
-        >
+        <div>
           <UndrawSVG />
         </div>
       </Collapse>
       <ContentWrapper>
-        <div
-          style={{
-            marginBottom: `.8em`,
-            opacity: `.2`,
-            fontSize: `80%`,
-            fontFamily: `monospace`,
-          }}
-        >
-          javascript / nodeJS / gatsbyJS / mongoDB
-        </div>
+        <TechList>javascript / nodeJS / gatsbyJS / mongoDB</TechList>
         <Description>{props.description}</Description>
 
         <Action

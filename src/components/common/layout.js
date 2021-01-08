@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
       </Helmet>
       <GlobalStyle />
       <Header />
-      <main>{children}</main>
+      <main> {children}</main>
       <Footer />
     </>
     // </ThemeProvider>

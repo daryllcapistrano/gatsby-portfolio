@@ -8,7 +8,6 @@ export const TitleWrapper = styled.div`
   display: inline-flex;
   justify-content: space-between;
   background: #191e24;
-  padding: 1em;
   border-bottom: 1px solid #121212;
   border-radius: 1em 1em 0 0;
 `
@@ -20,16 +19,24 @@ export const ContentWrapper = styled.div`
   border-radius: 0 0 1em 1em;
 `
 export const Title = styled.h3`
-  margin: 0;
-  color: white;
+  margin-left: 1em;
+  color: goldenrod;
+`
+
+export const TechList = styled.div`
+  font-family: monospace;
+  font-size: 80%;
+  margin-bottom: 1.25em;
 `
 
 export const Description = styled.p`
   margin: 0 0 1em 0;
+  line-height: 1.5;
+  color: #fef9f7;
 `
 
 export const Action = styled.a`
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.7em;
   text-decoration: none;
   color: #dce0d9;
