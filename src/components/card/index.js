@@ -41,7 +41,7 @@ export default function Card(props) {
         </div>
       </Collapse>
       <ContentWrapper>
-        <TechList>javascript / nodeJS / gatsbyJS / mongoDB</TechList>
+        <TechList>{props.stack}</TechList>
         <Description>{props.description}</Description>
 
         <Action
@@ -62,6 +62,6 @@ export default function Card(props) {
 Card.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  // stack: PropTypes.array.isRequired,
+  stack: PropTypes.string.isRequired,
   githubLink: PropTypes.string.isRequired,
 }

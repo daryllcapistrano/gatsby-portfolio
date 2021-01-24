@@ -24,6 +24,7 @@ const Projects = () => {
                 title={project.title}
                 description={project.description}
                 githubLink={project.githubLink}
+                stack={project.techStack}
               />
             </Grid>
           ))}
